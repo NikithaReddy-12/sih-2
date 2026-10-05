@@ -1,0 +1,4947 @@
+{
+  "granularity": "host",
+  "models": [
+    "logistic_window",
+    "logistic_flat10",
+    "persistence",
+    "oracle_persistence_unattainable",
+    "lstm"
+  ],
+  "horizons": [
+    0,
+    1,
+    3,
+    5
+  ],
+  "metrics": [
+    {
+      "model": "logistic_window",
+      "horizon": 0,
+      "source": "benchmark_v3_host.json",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.731514,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.077358,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.967095,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.096304,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "logistic_window",
+      "horizon": 1,
+      "source": "benchmark_v3_host.json",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.489868,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.055505,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.97642,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.103658,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "logistic_window",
+      "horizon": 3,
+      "source": "benchmark_v3_host.json",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.486281,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.054468,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.976821,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.10271,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "logistic_window",
+      "horizon": 5,
+      "source": "benchmark_v3_host.json",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.481651,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.050997,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.975113,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.107227,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "logistic_flat10",
+      "horizon": 0,
+      "source": "benchmark_v3_host.json",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.534546,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.222493,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.951043,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.027748,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "logistic_flat10",
+      "horizon": 1,
+      "source": "benchmark_v3_host.json",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.520607,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.188863,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.956056,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.025617,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "logistic_flat10",
+      "horizon": 3,
+      "source": "benchmark_v3_host.json",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.513964,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.176435,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.953642,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.026963,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "logistic_flat10",
+      "horizon": 5,
+      "source": "benchmark_v3_host.json",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.509841,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.173511,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.955882,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.026905,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "persistence",
+      "horizon": 0,
+      "source": "benchmark_v3_host.json",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.731514,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.077358,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.967095,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.096304,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "persistence",
+      "horizon": 1,
+      "source": "benchmark_v3_host.json",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.721475,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.05874,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.980707,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.098041,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "persistence",
+      "horizon": 3,
+      "source": "benchmark_v3_host.json",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.713145,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.057007,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.980132,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.098204,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "persistence",
+      "horizon": 5,
+      "source": "benchmark_v3_host.json",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.704697,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.055531,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.978507,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.098344,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "oracle_persistence_unattainable",
+      "horizon": 0,
+      "source": "benchmark_v3_host.json",
+      "feature_set": "all",
+      "f1": {
+        "mean": 1.0,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 1.0,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 1.0,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "oracle_persistence_unattainable",
+      "horizon": 1,
+      "source": "benchmark_v3_host.json",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.911766,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.73114,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.97642,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.00224,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "oracle_persistence_unattainable",
+      "horizon": 3,
+      "source": "benchmark_v3_host.json",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.902189,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.711878,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.979029,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.0024,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "oracle_persistence_unattainable",
+      "horizon": 5,
+      "source": "benchmark_v3_host.json",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.888588,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.687801,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.969457,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.0026,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "lstm",
+      "horizon": 0,
+      "source": "benchmark_v3_host.json",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.603432,
+        "std": 0.018848
+      },
+      "precision": {
+        "mean": 0.492574,
+        "std": 0.093275
+      },
+      "recall": {
+        "mean": 0.949438,
+        "std": 0.02564
+      },
+      "fpr": {
+        "mean": 0.008664,
+        "std": 0.003341
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "lstm",
+      "horizon": 1,
+      "source": "benchmark_v3_host.json",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.574762,
+        "std": 0.013866
+      },
+      "precision": {
+        "mean": 0.473679,
+        "std": 0.075352
+      },
+      "recall": {
+        "mean": 0.938103,
+        "std": 0.028308
+      },
+      "fpr": {
+        "mean": 0.006829,
+        "std": 0.002589
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "lstm",
+      "horizon": 3,
+      "source": "benchmark_v3_host.json",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.576085,
+        "std": 0.015867
+      },
+      "precision": {
+        "mean": 0.489674,
+        "std": 0.082159
+      },
+      "recall": {
+        "mean": 0.93543,
+        "std": 0.028733
+      },
+      "fpr": {
+        "mean": 0.006246,
+        "std": 0.002582
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "lstm",
+      "horizon": 5,
+      "source": "benchmark_v3_host.json",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.576793,
+        "std": 0.023282
+      },
+      "precision": {
+        "mean": 0.47639,
+        "std": 0.08113
+      },
+      "recall": {
+        "mean": 0.904412,
+        "std": 0.051794
+      },
+      "fpr": {
+        "mean": 0.006252,
+        "std": 0.002678
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    }
+  ],
+  "split": {
+    "method": "host_rows_inherit_attack_span_then_60_15_25",
+    "rule": "On a day with attack windows, windows before the first-to-last attack span are train, the span is 60/15/25 with purge gaps, and windows after the span are test. A day with no attack windows stays 60/15/25.",
+    "fractions": {
+      "train": 0.6,
+      "val": 0.15,
+      "test": 0.25
+    },
+    "purge_windows": 15,
+    "gap_ms": 600000,
+    "seq_len": 10,
+    "k": 5,
+    "f1_definition": "macro-F1 over proxy stages with test support, excluding classes marked n too small",
+    "persistence": "repeats the logistic_window predicted current stage; oracle_persistence_unattainable repeats the true current stage",
+    "n_too_small": [],
+    "train": {
+      "benign": 559730,
+      "initial_access": 98,
+      "lateral_movement": 2534,
+      "command_and_control": 1291,
+      "windows": 563653
+    },
+    "val": {
+      "benign": 103820,
+      "initial_access": 2,
+      "lateral_movement": 774,
+      "command_and_control": 231,
+      "windows": 104827
+    },
+    "test": {
+      "benign": 165155,
+      "initial_access": 75,
+      "lateral_movement": 750,
+      "command_and_control": 573,
+      "windows": 166553
+    },
+    "purge": {
+      "benign": 83895,
+      "initial_access": 15,
+      "lateral_movement": 322,
+      "command_and_control": 210,
+      "windows": 84442
+    },
+    "granularity": "host",
+    "host_rule": "The same network-level attack-span time boundaries are applied to every host. A missing host-window inside a sequence is a zero vector with active 0."
+  },
+  "notes": [
+    {
+      "source": "benchmark_v3_host.json",
+      "name": "stage_labels",
+      "text": "Stage labels are proxy mappings."
+    },
+    {
+      "source": "benchmark_v3_host.json",
+      "name": "excluded_attacks",
+      "text": "DoS, DDoS and Web Attacks are excluded."
+    },
+    {
+      "source": "benchmark_v3_host.json",
+      "name": "missing_stages",
+      "text": "Reconnaissance and exfiltration have no real data."
+    },
+    {
+      "source": "benchmark_v3_host.json",
+      "name": "coverage",
+      "text": "BruteForce appears on one capture day and Bot on one."
+    },
+    {
+      "source": "benchmark_v3_host.json",
+      "name": "dataset",
+      "text": "Evaluation is single-dataset."
+    },
+    {
+      "source": "benchmark_v3_host.json",
+      "name": "granularity",
+      "text": "Each row is one source host in one 60-second window. The host address is not a feature."
+    },
+    {
+      "source": "benchmark_v3_host.json",
+      "name": "logistic",
+      "text": "Both logistic models are class-weighted L2 logistic regression. On the full-data run the single-window model is fit with lbfgs and the flattened 10-window model is fit with averaged SGD on the same loss for at most 40 epochs, because an exact fit took about 55 minutes per horizon on 528,521 sequences and the process exited before that sweep finished. SGD reached the iteration cap before its tolerance on most horizons. One full-data fit is reused across seeds 0, 1, 2, 3, so the logistic standard deviation is zero. The seeds change the LSTM. The budgeted runs fit their own logistic models and do not reuse this fit."
+    },
+    {
+      "source": "benchmark_v3_host.json",
+      "name": "procedure_full",
+      "text": "Main metrics, onset, per-stage scores, network alarm, and the block bootstrap use the full-data procedure on seeds 0, 1, 2, 3. Seeds 0-3 were already saved (v3_host_lstm_seed0..3.pt and the matching logistic joblib files) and were reused without retraining. Seed 4 was not trained. The wall-clock gaps between the saved full-data LSTM artifacts v3_host_lstm_seed0.pt through v3_host_lstm_seed3.pt are 79.4 min, 23.5 min, 54.3 min, and the fastest is 23.5 minutes, which is not under 20 minutes. Full-data rows are not averaged with budgeted rows."
+    },
+    {
+      "source": "benchmark_v3_host.json",
+      "name": "procedure_budget",
+      "text": "Ablation, leave-one-attack-out, and cross_day use only the budgeted procedure, with seeds 0, 1. That procedure keeps the full test split and fits on a stratified sample of at most 25000 training anchors and 8000 validation anchors. The LSTM runs for at most 4 epochs with patience 2. The flattened logistic uses averaged SGD for at most 12 iterations. These rows are not averaged with the full-data results."
+    },
+    {
+      "source": "benchmark_v3_host.json",
+      "name": "mean_std_verdict",
+      "text": "LSTM beats both logistic variants and persistence by more than one standard deviation on macro-F1 at no horizon. It does not at h0 (logistic_window lstm 0.6034\u00b10.0188 vs 0.7315\u00b10.0000, persistence lstm 0.6034\u00b10.0188 vs 0.7315\u00b10.0000); h1 (persistence lstm 0.5748\u00b10.0139 vs 0.7215\u00b10.0000); h3 (persistence lstm 0.5761\u00b10.0159 vs 0.7131\u00b10.0000); h5 (persistence lstm 0.5768\u00b10.0233 vs 0.7047\u00b10.0000)."
+    },
+    {
+      "source": "benchmark_v3_host.json",
+      "name": "verdict",
+      "text": "95% block bootstrap: LSTM macro-F1 does not exceed both logistic variants and persistence at any horizon. Blocks are 30 consecutive windows, 200 resamples. It does not at h0 (logistic_window (0/4 seeds, mean CI -0.1746\u00b10.0137 to -0.0976\u00b10.0204); persistence (0/4 seeds, mean CI -0.1746\u00b10.0137 to -0.0976\u00b10.0204)); h1 (persistence (0/4 seeds, mean CI -0.1853\u00b10.0168 to -0.0978\u00b10.0121)); h3 (persistence (0/4 seeds, mean CI -0.1815\u00b10.0152 to 0.1335\u00b10.0167)); h5 (persistence (0/4 seeds, mean CI -0.1702\u00b10.0217 to 0.1345\u00b10.0261))."
+    },
+    {
+      "source": "benchmark_v3_host.json",
+      "name": "representation",
+      "text": "The host representation is better. Both the LSTM and the flattened logistic have a higher mean macro-F1 than the network-level models."
+    }
+  ],
+  "onset": [
+    {
+      "model": "logistic_window",
+      "feature_set": "all",
+      "precision": {
+        "mean": 0.002079,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.472973,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.112616,
+        "std": 0.0
+      },
+      "lead_windows": {
+        "mean": 1.371429,
+        "std": 0.0
+      },
+      "n": {
+        "mean": 149236.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "logistic_flat10",
+      "feature_set": "all",
+      "precision": {
+        "mean": 0.005473,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.364865,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.03289,
+        "std": 0.0
+      },
+      "lead_windows": {
+        "mean": 1.148148,
+        "std": 0.0
+      },
+      "n": {
+        "mean": 149236.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "persistence",
+      "feature_set": "all",
+      "precision": {
+        "mean": 0.002366,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.459459,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.096124,
+        "std": 0.0
+      },
+      "lead_windows": {
+        "mean": 1.705882,
+        "std": 0.0
+      },
+      "n": {
+        "mean": 149236.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "oracle_persistence_unattainable",
+      "feature_set": "all",
+      "precision": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "lead_windows": {
+        "mean": null,
+        "std": null
+      },
+      "n": {
+        "mean": 149236.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "lstm",
+      "feature_set": "all",
+      "precision": {
+        "mean": 0.037199,
+        "std": 0.013054
+      },
+      "recall": {
+        "mean": 0.364865,
+        "std": 0.119857
+      },
+      "fpr": {
+        "mean": 0.005013,
+        "std": 0.002411
+      },
+      "lead_windows": {
+        "mean": 1.511285,
+        "std": 0.195009
+      },
+      "n": {
+        "mean": 149236.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    }
+  ],
+  "network_alarm": [
+    {
+      "model": "logistic_window",
+      "precision": {
+        "mean": 0.020704,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 1.0,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.406009,
+        "std": 0.0
+      },
+      "lead": {
+        "mean": 0.6,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "logistic_flat10",
+      "precision": {
+        "mean": 0.020253,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.8,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.332189,
+        "std": 0.0
+      },
+      "lead": {
+        "mean": -0.5,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "persistence",
+      "precision": {
+        "mean": 0.020576,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 1.0,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.408584,
+        "std": 0.0
+      },
+      "lead": {
+        "mean": 0.6,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "oracle_persistence_unattainable",
+      "precision": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "lead": {
+        "mean": null,
+        "std": null
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "lstm",
+      "precision": {
+        "mean": 0.029838,
+        "std": 0.004373
+      },
+      "recall": {
+        "mean": 0.375,
+        "std": 0.05
+      },
+      "fpr": {
+        "mean": 0.105579,
+        "std": 0.01612
+      },
+      "lead": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    }
+  ],
+  "verdict_bootstrap": [
+    {
+      "baseline": "logistic_window",
+      "horizon": 0,
+      "low": {
+        "mean": -0.174644,
+        "std": 0.013703
+      },
+      "high": {
+        "mean": -0.097588,
+        "std": 0.020426
+      },
+      "diff_mean": {
+        "mean": -0.129603,
+        "std": 0.019656
+      },
+      "seeds_beating": 0,
+      "n_seeds": 4,
+      "beats": false,
+      "n_boot": 200,
+      "block": "30 windows",
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "baseline": "logistic_window",
+      "horizon": 1,
+      "low": {
+        "mean": 0.04647,
+        "std": 0.011478
+      },
+      "high": {
+        "mean": 0.128378,
+        "std": 0.015938
+      },
+      "diff_mean": {
+        "mean": 0.08403,
+        "std": 0.013183
+      },
+      "seeds_beating": 4,
+      "n_seeds": 4,
+      "beats": true,
+      "n_boot": 200,
+      "block": "30 windows",
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "baseline": "logistic_window",
+      "horizon": 3,
+      "low": {
+        "mean": 0.050354,
+        "std": 0.016985
+      },
+      "high": {
+        "mean": 0.15141,
+        "std": 0.02403
+      },
+      "diff_mean": {
+        "mean": 0.091599,
+        "std": 0.015765
+      },
+      "seeds_beating": 4,
+      "n_seeds": 4,
+      "beats": true,
+      "n_boot": 200,
+      "block": "30 windows",
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "baseline": "logistic_window",
+      "horizon": 5,
+      "low": {
+        "mean": 0.056721,
+        "std": 0.024791
+      },
+      "high": {
+        "mean": 0.151094,
+        "std": 0.020753
+      },
+      "diff_mean": {
+        "mean": 0.097643,
+        "std": 0.023112
+      },
+      "seeds_beating": 4,
+      "n_seeds": 4,
+      "beats": true,
+      "n_boot": 200,
+      "block": "30 windows",
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "baseline": "logistic_flat10",
+      "horizon": 0,
+      "low": {
+        "mean": 0.045411,
+        "std": 0.011928
+      },
+      "high": {
+        "mean": 0.094714,
+        "std": 0.021114
+      },
+      "diff_mean": {
+        "mean": 0.068509,
+        "std": 0.018307
+      },
+      "seeds_beating": 4,
+      "n_seeds": 4,
+      "beats": true,
+      "n_boot": 200,
+      "block": "30 windows",
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "baseline": "logistic_flat10",
+      "horizon": 1,
+      "low": {
+        "mean": 0.022938,
+        "std": 0.012073
+      },
+      "high": {
+        "mean": 0.077994,
+        "std": 0.014614
+      },
+      "diff_mean": {
+        "mean": 0.052825,
+        "std": 0.01342
+      },
+      "seeds_beating": 4,
+      "n_seeds": 4,
+      "beats": true,
+      "n_boot": 200,
+      "block": "30 windows",
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "baseline": "logistic_flat10",
+      "horizon": 3,
+      "low": {
+        "mean": 0.032106,
+        "std": 0.016242
+      },
+      "high": {
+        "mean": 0.102093,
+        "std": 0.025721
+      },
+      "diff_mean": {
+        "mean": 0.062839,
+        "std": 0.016016
+      },
+      "seeds_beating": 4,
+      "n_seeds": 4,
+      "beats": true,
+      "n_boot": 200,
+      "block": "30 windows",
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "baseline": "logistic_flat10",
+      "horizon": 5,
+      "low": {
+        "mean": 0.038923,
+        "std": 0.023258
+      },
+      "high": {
+        "mean": 0.105436,
+        "std": 0.030293
+      },
+      "diff_mean": {
+        "mean": 0.068743,
+        "std": 0.023524
+      },
+      "seeds_beating": 4,
+      "n_seeds": 4,
+      "beats": true,
+      "n_boot": 200,
+      "block": "30 windows",
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "baseline": "persistence",
+      "horizon": 0,
+      "low": {
+        "mean": -0.174644,
+        "std": 0.013703
+      },
+      "high": {
+        "mean": -0.097588,
+        "std": 0.020426
+      },
+      "diff_mean": {
+        "mean": -0.129603,
+        "std": 0.019656
+      },
+      "seeds_beating": 0,
+      "n_seeds": 4,
+      "beats": false,
+      "n_boot": 200,
+      "block": "30 windows",
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "baseline": "persistence",
+      "horizon": 1,
+      "low": {
+        "mean": -0.185338,
+        "std": 0.016815
+      },
+      "high": {
+        "mean": -0.09779,
+        "std": 0.012124
+      },
+      "diff_mean": {
+        "mean": -0.146175,
+        "std": 0.012852
+      },
+      "seeds_beating": 0,
+      "n_seeds": 4,
+      "beats": false,
+      "n_boot": 200,
+      "block": "30 windows",
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "baseline": "persistence",
+      "horizon": 3,
+      "low": {
+        "mean": -0.181465,
+        "std": 0.015211
+      },
+      "high": {
+        "mean": 0.133531,
+        "std": 0.016667
+      },
+      "diff_mean": {
+        "mean": -0.122471,
+        "std": 0.014004
+      },
+      "seeds_beating": 0,
+      "n_seeds": 4,
+      "beats": false,
+      "n_boot": 200,
+      "block": "30 windows",
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "baseline": "persistence",
+      "horizon": 5,
+      "low": {
+        "mean": -0.17019,
+        "std": 0.021681
+      },
+      "high": {
+        "mean": 0.134475,
+        "std": 0.026067
+      },
+      "diff_mean": {
+        "mean": -0.11228,
+        "std": 0.020203
+      },
+      "seeds_beating": 0,
+      "n_seeds": 4,
+      "beats": false,
+      "n_boot": 200,
+      "block": "30 windows",
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    }
+  ],
+  "loao": [
+    {
+      "model": "logistic_window",
+      "held_out": "initial_access",
+      "procedure": "budget",
+      "seeds": [
+        0,
+        1
+      ],
+      "recall": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "attack_precision": {
+        "mean": 0.004668,
+        "std": 0.0
+      },
+      "attack_recall": {
+        "mean": 1.0,
+        "std": 0.0
+      },
+      "attack_fpr": {
+        "mean": 0.0943,
+        "std": 0.0
+      },
+      "n": {
+        "mean": 66.0,
+        "std": 0.0
+      },
+      "n_test": {
+        "mean": 149302.0,
+        "std": 0.0
+      },
+      "pred_benign": {
+        "mean": 0.905299,
+        "std": 0.0
+      },
+      "pred_initial_access": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "pred_lateral_movement": {
+        "mean": 0.094031,
+        "std": 0.0
+      },
+      "pred_command_and_control": {
+        "mean": 0.00067,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "logistic_flat10",
+      "held_out": "initial_access",
+      "procedure": "budget",
+      "seeds": [
+        0,
+        1
+      ],
+      "recall": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "attack_precision": {
+        "mean": 0.010985,
+        "std": 0.0
+      },
+      "attack_recall": {
+        "mean": 1.0,
+        "std": 0.0
+      },
+      "attack_fpr": {
+        "mean": 0.039816,
+        "std": 0.0
+      },
+      "n": {
+        "mean": 66.0,
+        "std": 0.0
+      },
+      "n_test": {
+        "mean": 149302.0,
+        "std": 0.0
+      },
+      "pred_benign": {
+        "mean": 0.959759,
+        "std": 0.0
+      },
+      "pred_initial_access": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "pred_lateral_movement": {
+        "mean": 0.039236,
+        "std": 0.0
+      },
+      "pred_command_and_control": {
+        "mean": 0.001005,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "lstm",
+      "held_out": "initial_access",
+      "procedure": "budget",
+      "seeds": [
+        0,
+        1
+      ],
+      "recall": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "attack_precision": {
+        "mean": 0.018427,
+        "std": 0.001321
+      },
+      "attack_recall": {
+        "mean": 1.0,
+        "std": 0.0
+      },
+      "attack_fpr": {
+        "mean": 0.02362,
+        "std": 0.001725
+      },
+      "n": {
+        "mean": 66.0,
+        "std": 0.0
+      },
+      "n_test": {
+        "mean": 149302.0,
+        "std": 0.0
+      },
+      "pred_benign": {
+        "mean": 0.975948,
+        "std": 0.001724
+      },
+      "pred_initial_access": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "pred_lateral_movement": {
+        "mean": 0.023556,
+        "std": 0.001743
+      },
+      "pred_command_and_control": {
+        "mean": 0.000496,
+        "std": 1.9e-05
+      }
+    },
+    {
+      "model": "logistic_window",
+      "held_out": "lateral_movement",
+      "procedure": "budget",
+      "seeds": [
+        0,
+        1
+      ],
+      "recall": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "attack_precision": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "attack_recall": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "attack_fpr": {
+        "mean": 0.000261,
+        "std": 0.0
+      },
+      "n": {
+        "mean": 670.0,
+        "std": 0.0
+      },
+      "n_test": {
+        "mean": 149906.0,
+        "std": 0.0
+      },
+      "pred_benign": {
+        "mean": 0.99974,
+        "std": 0.0
+      },
+      "pred_initial_access": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "pred_lateral_movement": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "pred_command_and_control": {
+        "mean": 0.00026,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "logistic_flat10",
+      "held_out": "lateral_movement",
+      "procedure": "budget",
+      "seeds": [
+        0,
+        1
+      ],
+      "recall": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "attack_precision": {
+        "mean": 0.025684,
+        "std": 0.0
+      },
+      "attack_recall": {
+        "mean": 0.734328,
+        "std": 0.0
+      },
+      "attack_fpr": {
+        "mean": 0.125064,
+        "std": 0.0
+      },
+      "n": {
+        "mean": 670.0,
+        "std": 0.0
+      },
+      "n_test": {
+        "mean": 149906.0,
+        "std": 0.0
+      },
+      "pred_benign": {
+        "mean": 0.872213,
+        "std": 0.0
+      },
+      "pred_initial_access": {
+        "mean": 0.12766,
+        "std": 0.0
+      },
+      "pred_lateral_movement": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "pred_command_and_control": {
+        "mean": 0.000127,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "lstm",
+      "held_out": "lateral_movement",
+      "procedure": "budget",
+      "seeds": [
+        0,
+        1
+      ],
+      "recall": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "attack_precision": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "attack_recall": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "attack_fpr": {
+        "mean": 8.7e-05,
+        "std": 3.8e-05
+      },
+      "n": {
+        "mean": 670.0,
+        "std": 0.0
+      },
+      "n_test": {
+        "mean": 149906.0,
+        "std": 0.0
+      },
+      "pred_benign": {
+        "mean": 0.999913,
+        "std": 3.8e-05
+      },
+      "pred_initial_access": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "pred_lateral_movement": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "pred_command_and_control": {
+        "mean": 8.7e-05,
+        "std": 3.8e-05
+      }
+    },
+    {
+      "model": "logistic_window",
+      "held_out": "command_and_control",
+      "procedure": "budget",
+      "seeds": [
+        0,
+        1
+      ],
+      "recall": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "attack_precision": {
+        "mean": 0.034943,
+        "std": 0.0
+      },
+      "attack_recall": {
+        "mean": 0.933333,
+        "std": 0.0
+      },
+      "attack_fpr": {
+        "mean": 0.088089,
+        "std": 0.0
+      },
+      "n": {
+        "mean": 510.0,
+        "std": 0.0
+      },
+      "n_test": {
+        "mean": 149746.0,
+        "std": 0.0
+      },
+      "pred_benign": {
+        "mean": 0.909033,
+        "std": 0.0
+      },
+      "pred_initial_access": {
+        "mean": 0.001075,
+        "std": 0.0
+      },
+      "pred_lateral_movement": {
+        "mean": 0.089892,
+        "std": 0.0
+      },
+      "pred_command_and_control": {
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "logistic_flat10",
+      "held_out": "command_and_control",
+      "procedure": "budget",
+      "seeds": [
+        0,
+        1
+      ],
+      "recall": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "attack_precision": {
+        "mean": 0.031208,
+        "std": 0.0
+      },
+      "attack_recall": {
+        "mean": 1.0,
+        "std": 0.0
+      },
+      "attack_fpr": {
+        "mean": 0.106087,
+        "std": 0.0
+      },
+      "n": {
+        "mean": 510.0,
+        "std": 0.0
+      },
+      "n_test": {
+        "mean": 149746.0,
+        "std": 0.0
+      },
+      "pred_benign": {
+        "mean": 0.890869,
+        "std": 0.0
+      },
+      "pred_initial_access": {
+        "mean": 0.085158,
+        "std": 0.0
+      },
+      "pred_lateral_movement": {
+        "mean": 0.023974,
+        "std": 0.0
+      },
+      "pred_command_and_control": {
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "lstm",
+      "held_out": "command_and_control",
+      "procedure": "budget",
+      "seeds": [
+        0,
+        1
+      ],
+      "recall": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "attack_precision": {
+        "mean": 0.133114,
+        "std": 0.055842
+      },
+      "attack_recall": {
+        "mean": 0.882353,
+        "std": 0.011092
+      },
+      "attack_fpr": {
+        "mean": 0.021888,
+        "std": 0.010694
+      },
+      "n": {
+        "mean": 510.0,
+        "std": 0.0
+      },
+      "n_test": {
+        "mean": 149746.0,
+        "std": 0.0
+      },
+      "pred_benign": {
+        "mean": 0.975181,
+        "std": 0.010695
+      },
+      "pred_initial_access": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "pred_lateral_movement": {
+        "mean": 0.024819,
+        "std": 0.010695
+      },
+      "pred_command_and_control": {
+        "mean": 0.0,
+        "std": 0.0
+      }
+    }
+  ],
+  "ablation": [
+    {
+      "model": "logistic_window",
+      "horizon": 0,
+      "source": "benchmark_v3_host.json",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.47702,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.071313,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.952648,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.103581,
+        "std": 0.0
+      },
+      "procedure": "budget",
+      "seeds": [
+        0,
+        1
+      ]
+    },
+    {
+      "model": "logistic_window",
+      "horizon": 1,
+      "source": "benchmark_v3_host.json",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.470926,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.057189,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.950697,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.097781,
+        "std": 0.0
+      },
+      "procedure": "budget",
+      "seeds": [
+        0,
+        1
+      ]
+    },
+    {
+      "model": "logistic_window",
+      "horizon": 3,
+      "source": "benchmark_v3_host.json",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.463334,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.051143,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.965784,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.108533,
+        "std": 0.0
+      },
+      "procedure": "budget",
+      "seeds": [
+        0,
+        1
+      ]
+    },
+    {
+      "model": "logistic_window",
+      "horizon": 5,
+      "source": "benchmark_v3_host.json",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.461197,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.051183,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.957014,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.104834,
+        "std": 0.0
+      },
+      "procedure": "budget",
+      "seeds": [
+        0,
+        1
+      ]
+    },
+    {
+      "model": "logistic_flat10",
+      "horizon": 0,
+      "source": "benchmark_v3_host.json",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.259023,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.058094,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.925361,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.125265,
+        "std": 0.0
+      },
+      "procedure": "budget",
+      "seeds": [
+        0,
+        1
+      ]
+    },
+    {
+      "model": "logistic_flat10",
+      "horizon": 1,
+      "source": "benchmark_v3_host.json",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.239754,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.03912,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.943194,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.144535,
+        "std": 0.0
+      },
+      "procedure": "budget",
+      "seeds": [
+        0,
+        1
+      ]
+    },
+    {
+      "model": "logistic_flat10",
+      "horizon": 3,
+      "source": "benchmark_v3_host.json",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.26119,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.072461,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.923841,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.071629,
+        "std": 0.0
+      },
+      "procedure": "budget",
+      "seeds": [
+        0,
+        1
+      ]
+    },
+    {
+      "model": "logistic_flat10",
+      "horizon": 5,
+      "source": "benchmark_v3_host.json",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.268184,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.077783,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.920814,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.064513,
+        "std": 0.0
+      },
+      "procedure": "budget",
+      "seeds": [
+        0,
+        1
+      ]
+    },
+    {
+      "model": "lstm",
+      "horizon": 0,
+      "source": "benchmark_v3_host.json",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.525108,
+        "std": 0.03059
+      },
+      "precision": {
+        "mean": 0.197946,
+        "std": 0.111294
+      },
+      "recall": {
+        "mean": 0.907705,
+        "std": 0.007945
+      },
+      "fpr": {
+        "mean": 0.038007,
+        "std": 0.025899
+      },
+      "procedure": "budget",
+      "seeds": [
+        0,
+        1
+      ]
+    },
+    {
+      "model": "lstm",
+      "horizon": 1,
+      "source": "benchmark_v3_host.json",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.510805,
+        "std": 0.021056
+      },
+      "precision": {
+        "mean": 0.178133,
+        "std": 0.09871
+      },
+      "recall": {
+        "mean": 0.937299,
+        "std": 0.008337
+      },
+      "fpr": {
+        "mean": 0.033029,
+        "std": 0.021783
+      },
+      "procedure": "budget",
+      "seeds": [
+        0,
+        1
+      ]
+    },
+    {
+      "model": "lstm",
+      "horizon": 3,
+      "source": "benchmark_v3_host.json",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.506892,
+        "std": 0.020605
+      },
+      "precision": {
+        "mean": 0.175738,
+        "std": 0.097412
+      },
+      "recall": {
+        "mean": 0.937086,
+        "std": 0.012488
+      },
+      "fpr": {
+        "mean": 0.032626,
+        "std": 0.021585
+      },
+      "procedure": "budget",
+      "seeds": [
+        0,
+        1
+      ]
+    },
+    {
+      "model": "lstm",
+      "horizon": 5,
+      "source": "benchmark_v3_host.json",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.503868,
+        "std": 0.020713
+      },
+      "precision": {
+        "mean": 0.177416,
+        "std": 0.097531
+      },
+      "recall": {
+        "mean": 0.930995,
+        "std": 0.009599
+      },
+      "fpr": {
+        "mean": 0.03113,
+        "std": 0.0204
+      },
+      "procedure": "budget",
+      "seeds": [
+        0,
+        1
+      ]
+    },
+    {
+      "model": "logistic_window",
+      "horizon": 0,
+      "source": "benchmark_v3_host.json",
+      "feature_set": "flow",
+      "f1": {
+        "mean": 0.455456,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.041241,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.974318,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.189117,
+        "std": 0.0
+      },
+      "procedure": "budget",
+      "seeds": [
+        0,
+        1
+      ]
+    },
+    {
+      "model": "logistic_window",
+      "horizon": 1,
+      "source": "benchmark_v3_host.json",
+      "feature_set": "flow",
+      "f1": {
+        "mean": 0.448705,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.030122,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.978564,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.196571,
+        "std": 0.0
+      },
+      "procedure": "budget",
+      "seeds": [
+        0,
+        1
+      ]
+    },
+    {
+      "model": "logistic_window",
+      "horizon": 3,
+      "source": "benchmark_v3_host.json",
+      "feature_set": "flow",
+      "f1": {
+        "mean": 0.448544,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.028595,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.976821,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.200995,
+        "std": 0.0
+      },
+      "procedure": "budget",
+      "seeds": [
+        0,
+        1
+      ]
+    },
+    {
+      "model": "logistic_window",
+      "horizon": 5,
+      "source": "benchmark_v3_host.json",
+      "feature_set": "flow",
+      "f1": {
+        "mean": 0.445069,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.029868,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.9819,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.188458,
+        "std": 0.0
+      },
+      "procedure": "budget",
+      "seeds": [
+        0,
+        1
+      ]
+    },
+    {
+      "model": "logistic_flat10",
+      "horizon": 0,
+      "source": "benchmark_v3_host.json",
+      "feature_set": "flow",
+      "f1": {
+        "mean": 0.252833,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.063974,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.94703,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.115689,
+        "std": 0.0
+      },
+      "procedure": "budget",
+      "seeds": [
+        0,
+        1
+      ]
+    },
+    {
+      "model": "logistic_flat10",
+      "horizon": 1,
+      "source": "benchmark_v3_host.json",
+      "feature_set": "flow",
+      "f1": {
+        "mean": 0.237642,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.043944,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.935691,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.127002,
+        "std": 0.0
+      },
+      "procedure": "budget",
+      "seeds": [
+        0,
+        1
+      ]
+    },
+    {
+      "model": "logistic_flat10",
+      "horizon": 3,
+      "source": "benchmark_v3_host.json",
+      "feature_set": "flow",
+      "f1": {
+        "mean": 0.268832,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.057306,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.931567,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.092822,
+        "std": 0.0
+      },
+      "procedure": "budget",
+      "seeds": [
+        0,
+        1
+      ]
+    },
+    {
+      "model": "logistic_flat10",
+      "horizon": 5,
+      "source": "benchmark_v3_host.json",
+      "feature_set": "flow",
+      "f1": {
+        "mean": 0.278178,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.062199,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.920814,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.08204,
+        "std": 0.0
+      },
+      "procedure": "budget",
+      "seeds": [
+        0,
+        1
+      ]
+    },
+    {
+      "model": "lstm",
+      "horizon": 0,
+      "source": "benchmark_v3_host.json",
+      "feature_set": "flow",
+      "f1": {
+        "mean": 0.512836,
+        "std": 0.004927
+      },
+      "precision": {
+        "mean": 0.14372,
+        "std": 0.022405
+      },
+      "recall": {
+        "mean": 0.951846,
+        "std": 0.003405
+      },
+      "fpr": {
+        "mean": 0.048045,
+        "std": 0.008898
+      },
+      "procedure": "budget",
+      "seeds": [
+        0,
+        1
+      ]
+    },
+    {
+      "model": "lstm",
+      "horizon": 1,
+      "source": "benchmark_v3_host.json",
+      "feature_set": "flow",
+      "f1": {
+        "mean": 0.506185,
+        "std": 0.001779
+      },
+      "precision": {
+        "mean": 0.152752,
+        "std": 0.01412
+      },
+      "recall": {
+        "mean": 0.969989,
+        "std": 0.001516
+      },
+      "fpr": {
+        "mean": 0.033738,
+        "std": 0.003731
+      },
+      "procedure": "budget",
+      "seeds": [
+        0,
+        1
+      ]
+    },
+    {
+      "model": "lstm",
+      "horizon": 3,
+      "source": "benchmark_v3_host.json",
+      "feature_set": "flow",
+      "f1": {
+        "mean": 0.50401,
+        "std": 0.006957
+      },
+      "precision": {
+        "mean": 0.168031,
+        "std": 0.021859
+      },
+      "recall": {
+        "mean": 0.963576,
+        "std": 0.006244
+      },
+      "fpr": {
+        "mean": 0.029209,
+        "std": 0.004746
+      },
+      "procedure": "budget",
+      "seeds": [
+        0,
+        1
+      ]
+    },
+    {
+      "model": "lstm",
+      "horizon": 5,
+      "source": "benchmark_v3_host.json",
+      "feature_set": "flow",
+      "f1": {
+        "mean": 0.498792,
+        "std": 0.009438
+      },
+      "precision": {
+        "mean": 0.16523,
+        "std": 0.030278
+      },
+      "recall": {
+        "mean": 0.958145,
+        "std": 0.009599
+      },
+      "fpr": {
+        "mean": 0.029222,
+        "std": 0.006679
+      },
+      "procedure": "budget",
+      "seeds": [
+        0,
+        1
+      ]
+    },
+    {
+      "model": "logistic_window",
+      "horizon": 0,
+      "source": "benchmark_v3_host.json",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.466244,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.048757,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.971108,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.158186,
+        "std": 0.0
+      },
+      "procedure": "budget",
+      "seeds": [
+        0,
+        1
+      ]
+    },
+    {
+      "model": "logistic_window",
+      "horizon": 1,
+      "source": "benchmark_v3_host.json",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.462496,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.038125,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.965702,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.152004,
+        "std": 0.0
+      },
+      "procedure": "budget",
+      "seeds": [
+        0,
+        1
+      ]
+    },
+    {
+      "model": "logistic_window",
+      "horizon": 3,
+      "source": "benchmark_v3_host.json",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.45689,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.035112,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.970199,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.16149,
+        "std": 0.0
+      },
+      "procedure": "budget",
+      "seeds": [
+        0,
+        1
+      ]
+    },
+    {
+      "model": "logistic_window",
+      "horizon": 5,
+      "source": "benchmark_v3_host.json",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.454187,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.03717,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.958145,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.14666,
+        "std": 0.0
+      },
+      "procedure": "budget",
+      "seeds": [
+        0,
+        1
+      ]
+    },
+    {
+      "model": "logistic_flat10",
+      "horizon": 0,
+      "source": "benchmark_v3_host.json",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.247142,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.052868,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.935795,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.139973,
+        "std": 0.0
+      },
+      "procedure": "budget",
+      "seeds": [
+        0,
+        1
+      ]
+    },
+    {
+      "model": "logistic_flat10",
+      "horizon": 1,
+      "source": "benchmark_v3_host.json",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.254678,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.057175,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.92926,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.095601,
+        "std": 0.0
+      },
+      "procedure": "budget",
+      "seeds": [
+        0,
+        1
+      ]
+    },
+    {
+      "model": "logistic_flat10",
+      "horizon": 3,
+      "source": "benchmark_v3_host.json",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.250523,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.050682,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.934879,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.106066,
+        "std": 0.0
+      },
+      "procedure": "budget",
+      "seeds": [
+        0,
+        1
+      ]
+    },
+    {
+      "model": "logistic_flat10",
+      "horizon": 5,
+      "source": "benchmark_v3_host.json",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.254138,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.054407,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.932127,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.09573,
+        "std": 0.0
+      },
+      "procedure": "budget",
+      "seeds": [
+        0,
+        1
+      ]
+    },
+    {
+      "model": "lstm",
+      "horizon": 0,
+      "source": "benchmark_v3_host.json",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.52474,
+        "std": 0.014694
+      },
+      "precision": {
+        "mean": 0.200041,
+        "std": 0.035442
+      },
+      "recall": {
+        "mean": 0.91252,
+        "std": 0.02043
+      },
+      "fpr": {
+        "mean": 0.030998,
+        "std": 0.00616
+      },
+      "procedure": "budget",
+      "seeds": [
+        0,
+        1
+      ]
+    },
+    {
+      "model": "lstm",
+      "horizon": 1,
+      "source": "benchmark_v3_host.json",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.511485,
+        "std": 0.007434
+      },
+      "precision": {
+        "mean": 0.221165,
+        "std": 0.015347
+      },
+      "recall": {
+        "mean": 0.93194,
+        "std": 0.017431
+      },
+      "fpr": {
+        "mean": 0.020555,
+        "std": 0.002213
+      },
+      "procedure": "budget",
+      "seeds": [
+        0,
+        1
+      ]
+    },
+    {
+      "model": "lstm",
+      "horizon": 3,
+      "source": "benchmark_v3_host.json",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.51301,
+        "std": 0.005613
+      },
+      "precision": {
+        "mean": 0.241715,
+        "std": 0.020356
+      },
+      "recall": {
+        "mean": 0.924393,
+        "std": 0.014829
+      },
+      "fpr": {
+        "mean": 0.017663,
+        "std": 0.002241
+      },
+      "procedure": "budget",
+      "seeds": [
+        0,
+        1
+      ]
+    },
+    {
+      "model": "lstm",
+      "horizon": 5,
+      "source": "benchmark_v3_host.json",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.512099,
+        "std": 0.003917
+      },
+      "precision": {
+        "mean": 0.25093,
+        "std": 0.021655
+      },
+      "recall": {
+        "mean": 0.910633,
+        "std": 0.015998
+      },
+      "fpr": {
+        "mean": 0.01616,
+        "std": 0.002141
+      },
+      "procedure": "budget",
+      "seeds": [
+        0,
+        1
+      ]
+    },
+    {
+      "model": "logistic_window",
+      "horizon": 0,
+      "source": "benchmark_v3_host.json",
+      "feature_set": "flow+packet+concentration",
+      "f1": {
+        "mean": 0.464874,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.051233,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.97512,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.150768,
+        "std": 0.0
+      },
+      "procedure": "budget",
+      "seeds": [
+        0,
+        1
+      ]
+    },
+    {
+      "model": "logistic_window",
+      "horizon": 1,
+      "source": "benchmark_v3_host.json",
+      "feature_set": "flow+packet+concentration",
+      "f1": {
+        "mean": 0.459645,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.038501,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.960343,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.149623,
+        "std": 0.0
+      },
+      "procedure": "budget",
+      "seeds": [
+        0,
+        1
+      ]
+    },
+    {
+      "model": "logistic_window",
+      "horizon": 3,
+      "source": "benchmark_v3_host.json",
+      "feature_set": "flow+packet+concentration",
+      "f1": {
+        "mean": 0.455787,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.037368,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.97351,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.151903,
+        "std": 0.0
+      },
+      "procedure": "budget",
+      "seeds": [
+        0,
+        1
+      ]
+    },
+    {
+      "model": "logistic_window",
+      "horizon": 5,
+      "source": "benchmark_v3_host.json",
+      "feature_set": "flow+packet+concentration",
+      "f1": {
+        "mean": 0.454698,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.039578,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.972851,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.139501,
+        "std": 0.0
+      },
+      "procedure": "budget",
+      "seeds": [
+        0,
+        1
+      ]
+    },
+    {
+      "model": "logistic_flat10",
+      "horizon": 0,
+      "source": "benchmark_v3_host.json",
+      "feature_set": "flow+packet+concentration",
+      "f1": {
+        "mean": 0.247044,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.054555,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.933387,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.135055,
+        "std": 0.0
+      },
+      "procedure": "budget",
+      "seeds": [
+        0,
+        1
+      ]
+    },
+    {
+      "model": "logistic_flat10",
+      "horizon": 1,
+      "source": "benchmark_v3_host.json",
+      "feature_set": "flow+packet+concentration",
+      "f1": {
+        "mean": 0.255896,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.070409,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.930332,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.07663,
+        "std": 0.0
+      },
+      "procedure": "budget",
+      "seeds": [
+        0,
+        1
+      ]
+    },
+    {
+      "model": "logistic_flat10",
+      "horizon": 3,
+      "source": "benchmark_v3_host.json",
+      "feature_set": "flow+packet+concentration",
+      "f1": {
+        "mean": 0.252593,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.063368,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.937086,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.083897,
+        "std": 0.0
+      },
+      "procedure": "budget",
+      "seeds": [
+        0,
+        1
+      ]
+    },
+    {
+      "model": "logistic_flat10",
+      "horizon": 5,
+      "source": "benchmark_v3_host.json",
+      "feature_set": "flow+packet+concentration",
+      "f1": {
+        "mean": 0.258973,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.072265,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.928733,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.070455,
+        "std": 0.0
+      },
+      "procedure": "budget",
+      "seeds": [
+        0,
+        1
+      ]
+    },
+    {
+      "model": "lstm",
+      "horizon": 0,
+      "source": "benchmark_v3_host.json",
+      "feature_set": "flow+packet+concentration",
+      "f1": {
+        "mean": 0.510228,
+        "std": 0.046269
+      },
+      "precision": {
+        "mean": 0.154013,
+        "std": 0.14592
+      },
+      "recall": {
+        "mean": 0.932183,
+        "std": 0.030078
+      },
+      "fpr": {
+        "mean": 0.085304,
+        "std": 0.089575
+      },
+      "procedure": "budget",
+      "seeds": [
+        0,
+        1
+      ]
+    },
+    {
+      "model": "lstm",
+      "horizon": 1,
+      "source": "benchmark_v3_host.json",
+      "feature_set": "flow+packet+concentration",
+      "f1": {
+        "mean": 0.496146,
+        "std": 0.033094
+      },
+      "precision": {
+        "mean": 0.13859,
+        "std": 0.134089
+      },
+      "recall": {
+        "mean": 0.952304,
+        "std": 0.02501
+      },
+      "fpr": {
+        "mean": 0.075671,
+        "std": 0.079931
+      },
+      "procedure": "budget",
+      "seeds": [
+        0,
+        1
+      ]
+    },
+    {
+      "model": "lstm",
+      "horizon": 3,
+      "source": "benchmark_v3_host.json",
+      "feature_set": "flow+packet+concentration",
+      "f1": {
+        "mean": 0.496561,
+        "std": 0.03561
+      },
+      "precision": {
+        "mean": 0.149351,
+        "std": 0.146084
+      },
+      "recall": {
+        "mean": 0.944812,
+        "std": 0.03278
+      },
+      "fpr": {
+        "mean": 0.068982,
+        "std": 0.074201
+      },
+      "procedure": "budget",
+      "seeds": [
+        0,
+        1
+      ]
+    },
+    {
+      "model": "lstm",
+      "horizon": 5,
+      "source": "benchmark_v3_host.json",
+      "feature_set": "flow+packet+concentration",
+      "f1": {
+        "mean": 0.493285,
+        "std": 0.034258
+      },
+      "precision": {
+        "mean": 0.148222,
+        "std": 0.14306
+      },
+      "recall": {
+        "mean": 0.938348,
+        "std": 0.039195
+      },
+      "fpr": {
+        "mean": 0.065893,
+        "std": 0.070281
+      },
+      "procedure": "budget",
+      "seeds": [
+        0,
+        1
+      ]
+    }
+  ],
+  "per_stage": [
+    {
+      "model": "logistic_window",
+      "horizon": 0,
+      "stage": "benign",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.949275,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 149236.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "logistic_window",
+      "horizon": 0,
+      "stage": "initial_access",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.935484,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 66.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "logistic_window",
+      "horizon": 0,
+      "stage": "lateral_movement",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.080383,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 670.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "logistic_window",
+      "horizon": 0,
+      "stage": "command_and_control",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.960915,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 510.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "logistic_window",
+      "horizon": 1,
+      "stage": "benign",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.945264,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 149549.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "logistic_window",
+      "horizon": 1,
+      "stage": "initial_access",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 65.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "logistic_window",
+      "horizon": 1,
+      "stage": "lateral_movement",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.042226,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 365.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "logistic_window",
+      "horizon": 1,
+      "stage": "command_and_control",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.971981,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 503.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "logistic_window",
+      "horizon": 3,
+      "stage": "benign",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.945795,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 149576.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "logistic_window",
+      "horizon": 3,
+      "stage": "initial_access",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 63.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "logistic_window",
+      "horizon": 3,
+      "stage": "lateral_movement",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.041444,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 354.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "logistic_window",
+      "horizon": 3,
+      "stage": "command_and_control",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.957884,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 489.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "logistic_window",
+      "horizon": 5,
+      "stage": "benign",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.943276,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 149598.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "logistic_window",
+      "horizon": 5,
+      "stage": "initial_access",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 61.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "logistic_window",
+      "horizon": 5,
+      "stage": "lateral_movement",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.038995,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 348.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "logistic_window",
+      "horizon": 5,
+      "stage": "command_and_control",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.944334,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 475.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "logistic_flat10",
+      "horizon": 0,
+      "stage": "benign",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.985727,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 149236.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "logistic_flat10",
+      "horizon": 0,
+      "stage": "initial_access",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 66.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "logistic_flat10",
+      "horizon": 0,
+      "stage": "lateral_movement",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.225134,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 670.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "logistic_flat10",
+      "horizon": 0,
+      "stage": "command_and_control",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.927323,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 510.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "logistic_flat10",
+      "horizon": 1,
+      "stage": "benign",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.986888,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 149549.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "logistic_flat10",
+      "horizon": 1,
+      "stage": "initial_access",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 65.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "logistic_flat10",
+      "horizon": 1,
+      "stage": "lateral_movement",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.142889,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 365.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "logistic_flat10",
+      "horizon": 1,
+      "stage": "command_and_control",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.952652,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 503.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "logistic_flat10",
+      "horizon": 3,
+      "stage": "benign",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.986194,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 149576.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "logistic_flat10",
+      "horizon": 3,
+      "stage": "initial_access",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 63.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "logistic_flat10",
+      "horizon": 3,
+      "stage": "lateral_movement",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.132879,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 354.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "logistic_flat10",
+      "horizon": 3,
+      "stage": "command_and_control",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.936782,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 489.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "logistic_flat10",
+      "horizon": 5,
+      "stage": "benign",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.986234,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 149598.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "logistic_flat10",
+      "horizon": 5,
+      "stage": "initial_access",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 61.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "logistic_flat10",
+      "horizon": 5,
+      "stage": "lateral_movement",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.13259,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 348.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "logistic_flat10",
+      "horizon": 5,
+      "stage": "command_and_control",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.920543,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 475.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "persistence",
+      "horizon": 0,
+      "stage": "benign",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.949275,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 149236.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "persistence",
+      "horizon": 0,
+      "stage": "initial_access",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.935484,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 66.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "persistence",
+      "horizon": 0,
+      "stage": "lateral_movement",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.080383,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 670.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "persistence",
+      "horizon": 0,
+      "stage": "command_and_control",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.960915,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 510.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "persistence",
+      "horizon": 1,
+      "stage": "benign",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.948392,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 149549.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "persistence",
+      "horizon": 1,
+      "stage": "initial_access",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.926829,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 65.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "persistence",
+      "horizon": 1,
+      "stage": "lateral_movement",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.045226,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 365.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "persistence",
+      "horizon": 1,
+      "stage": "command_and_control",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.965451,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 503.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "persistence",
+      "horizon": 3,
+      "stage": "benign",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.948302,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 149576.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "persistence",
+      "horizon": 3,
+      "stage": "initial_access",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.909091,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 63.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "persistence",
+      "horizon": 3,
+      "stage": "lateral_movement",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.043824,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 354.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "persistence",
+      "horizon": 3,
+      "stage": "command_and_control",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.951362,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 489.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "persistence",
+      "horizon": 5,
+      "stage": "benign",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.948222,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 149598.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "persistence",
+      "horizon": 5,
+      "stage": "initial_access",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.890756,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 61.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "persistence",
+      "horizon": 5,
+      "stage": "lateral_movement",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.042928,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 348.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "persistence",
+      "horizon": 5,
+      "stage": "command_and_control",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.936884,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 475.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "oracle_persistence_unattainable",
+      "horizon": 0,
+      "stage": "benign",
+      "feature_set": "all",
+      "f1": {
+        "mean": 1.0,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 149236.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "oracle_persistence_unattainable",
+      "horizon": 0,
+      "stage": "initial_access",
+      "feature_set": "all",
+      "f1": {
+        "mean": 1.0,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 66.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "oracle_persistence_unattainable",
+      "horizon": 0,
+      "stage": "lateral_movement",
+      "feature_set": "all",
+      "f1": {
+        "mean": 1.0,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 670.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "oracle_persistence_unattainable",
+      "horizon": 0,
+      "stage": "command_and_control",
+      "feature_set": "all",
+      "f1": {
+        "mean": 1.0,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 510.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "oracle_persistence_unattainable",
+      "horizon": 1,
+      "stage": "benign",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.998805,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 149549.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "oracle_persistence_unattainable",
+      "horizon": 1,
+      "stage": "initial_access",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.992366,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 65.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "oracle_persistence_unattainable",
+      "horizon": 1,
+      "stage": "lateral_movement",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.662802,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 365.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "oracle_persistence_unattainable",
+      "horizon": 1,
+      "stage": "command_and_control",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.99309,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 503.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "oracle_persistence_unattainable",
+      "horizon": 3,
+      "stage": "benign",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.998735,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 149576.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "oracle_persistence_unattainable",
+      "horizon": 3,
+      "stage": "initial_access",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.976744,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 63.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "oracle_persistence_unattainable",
+      "horizon": 3,
+      "stage": "lateral_movement",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.654297,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 354.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "oracle_persistence_unattainable",
+      "horizon": 3,
+      "stage": "command_and_control",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.978979,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 489.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "oracle_persistence_unattainable",
+      "horizon": 5,
+      "stage": "benign",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.998608,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 149598.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "oracle_persistence_unattainable",
+      "horizon": 5,
+      "stage": "initial_access",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.96063,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 61.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "oracle_persistence_unattainable",
+      "horizon": 5,
+      "stage": "lateral_movement",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.630648,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 348.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "oracle_persistence_unattainable",
+      "horizon": 5,
+      "stage": "command_and_control",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.964467,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 475.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "lstm",
+      "horizon": 0,
+      "stage": "benign",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.995436,
+        "std": 0.001586
+      },
+      "support": {
+        "mean": 149236.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "lstm",
+      "horizon": 0,
+      "stage": "initial_access",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 66.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "lstm",
+      "horizon": 0,
+      "stage": "lateral_movement",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.485492,
+        "std": 0.075755
+      },
+      "support": {
+        "mean": 670.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "lstm",
+      "horizon": 0,
+      "stage": "command_and_control",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.932799,
+        "std": 0.004271
+      },
+      "support": {
+        "mean": 510.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "lstm",
+      "horizon": 1,
+      "stage": "benign",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.99638,
+        "std": 0.001234
+      },
+      "support": {
+        "mean": 149549.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "lstm",
+      "horizon": 1,
+      "stage": "initial_access",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 65.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "lstm",
+      "horizon": 1,
+      "stage": "lateral_movement",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.375478,
+        "std": 0.054736
+      },
+      "support": {
+        "mean": 365.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "lstm",
+      "horizon": 1,
+      "stage": "command_and_control",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.927191,
+        "std": 0.00156
+      },
+      "support": {
+        "mean": 503.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "lstm",
+      "horizon": 3,
+      "stage": "benign",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.99667,
+        "std": 0.001228
+      },
+      "support": {
+        "mean": 149576.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "lstm",
+      "horizon": 3,
+      "stage": "initial_access",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 63.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "lstm",
+      "horizon": 3,
+      "stage": "lateral_movement",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.391077,
+        "std": 0.062255
+      },
+      "support": {
+        "mean": 354.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "lstm",
+      "horizon": 3,
+      "stage": "command_and_control",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.916591,
+        "std": 0.001854
+      },
+      "support": {
+        "mean": 489.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "lstm",
+      "horizon": 5,
+      "stage": "benign",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.996581,
+        "std": 0.001208
+      },
+      "support": {
+        "mean": 149598.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "lstm",
+      "horizon": 5,
+      "stage": "initial_access",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 61.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "lstm",
+      "horizon": 5,
+      "stage": "lateral_movement",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.386433,
+        "std": 0.066357
+      },
+      "support": {
+        "mean": 348.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "model": "lstm",
+      "horizon": 5,
+      "stage": "command_and_control",
+      "feature_set": "all",
+      "f1": {
+        "mean": 0.924158,
+        "std": 0.029762
+      },
+      "support": {
+        "mean": 475.0,
+        "std": 0.0
+      },
+      "procedure": "full",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ]
+    }
+  ],
+  "cross_day": [
+    {
+      "train_day": "2018-02-28",
+      "test_day": "2018-03-01",
+      "model": "logistic_window",
+      "procedure": "budget",
+      "seeds": [
+        0,
+        1
+      ],
+      "precision": {
+        "mean": 0.11388,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.868231,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.139635,
+        "std": 0.0
+      },
+      "lateral_movement_f1": {
+        "mean": 0.20135,
+        "std": 0.0
+      }
+    },
+    {
+      "train_day": "2018-02-28",
+      "test_day": "2018-03-01",
+      "model": "logistic_flat10",
+      "procedure": "budget",
+      "seeds": [
+        0,
+        1
+      ],
+      "precision": {
+        "mean": 0.133259,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.862816,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.115991,
+        "std": 0.0
+      },
+      "lateral_movement_f1": {
+        "mean": 0.230862,
+        "std": 0.0
+      }
+    },
+    {
+      "train_day": "2018-02-28",
+      "test_day": "2018-03-01",
+      "model": "lstm",
+      "procedure": "budget",
+      "seeds": [
+        0,
+        1
+      ],
+      "precision": {
+        "mean": 0.162561,
+        "std": 0.068827
+      },
+      "recall": {
+        "mean": 0.882897,
+        "std": 0.016912
+      },
+      "fpr": {
+        "mean": 0.105559,
+        "std": 0.054219
+      },
+      "lateral_movement_f1": {
+        "mean": 0.271228,
+        "std": 0.097807
+      }
+    },
+    {
+      "train_day": "2018-03-01",
+      "test_day": "2018-02-28",
+      "model": "logistic_window",
+      "procedure": "budget",
+      "seeds": [
+        0,
+        1
+      ],
+      "precision": {
+        "mean": 0.15985,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.810631,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.090234,
+        "std": 0.0
+      },
+      "lateral_movement_f1": {
+        "mean": 0.267042,
+        "std": 0.0
+      }
+    },
+    {
+      "train_day": "2018-03-01",
+      "test_day": "2018-02-28",
+      "model": "logistic_flat10",
+      "procedure": "budget",
+      "seeds": [
+        0,
+        1
+      ],
+      "precision": {
+        "mean": 0.174613,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.797817,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.079871,
+        "std": 0.0
+      },
+      "lateral_movement_f1": {
+        "mean": 0.286518,
+        "std": 0.0
+      }
+    },
+    {
+      "train_day": "2018-03-01",
+      "test_day": "2018-02-28",
+      "model": "lstm",
+      "procedure": "budget",
+      "seeds": [
+        0,
+        1
+      ],
+      "precision": {
+        "mean": 0.225683,
+        "std": 0.069114
+      },
+      "recall": {
+        "mean": 0.813479,
+        "std": 0.013424
+      },
+      "fpr": {
+        "mean": 0.063069,
+        "std": 0.025566
+      },
+      "lateral_movement_f1": {
+        "mean": 0.350207,
+        "std": 0.083609
+      }
+    }
+  ],
+  "seeds": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "budget_seeds": [
+    0,
+    1
+  ],
+  "window_s": 60,
+  "counts": {
+    "flows": 20115529,
+    "host_rows": 921096,
+    "retained_flow_shares": {
+      "initial_access": 1.0,
+      "lateral_movement": 0.9817115948807347,
+      "command_and_control": 0.9999903708660924,
+      "dos_ddos_web": 0.9988342514114761,
+      "other": null,
+      "benign": 0.9382044469576456
+    },
+    "class_flows": {
+      "benign": 17514626,
+      "initial_access": 575194,
+      "lateral_movement": 188152,
+      "command_and_control": 207703,
+      "excluded": 1629854,
+      "other": 0
+    },
+    "min_flows": 3,
+    "top_hosts_per_window": 500
+  }
+}

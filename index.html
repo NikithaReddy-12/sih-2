@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>PREDICT-X</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+</head>
+<body class="bg-surface font-body-md text-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container">
+  <div id="login-container"></div>
+  <div id="app-shell" class="hidden">
+  <div id="sidebar-container"></div>
+
+  <!-- Main Content Body (Offset by Sidebar Width) -->
+  <div class="pl-64">
+    <!-- Header Container -->
+    <div id="header-container"></div>
+
+    <!-- Dynamic Operational Module View Container -->
+    <main id="main-content" class="relative pt-16 bg-surface min-h-screen w-full px-space-lg pt-space-lg pb-24"></main>
+  </div>
+  <div id="workflow-container"></div>
+  </div>
+
+  <!-- Global Modals & Drawers -->
+  <div id="search-modal-container"></div>
+  <div id="approval-modal-container"></div>
+  <div id="node-modal-container"></div>
+
+  <!-- Entry Script -->
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

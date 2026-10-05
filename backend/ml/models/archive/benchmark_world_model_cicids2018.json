@@ -1,0 +1,266 @@
+{
+  "dataset": "CIC-IDS-2018",
+  "identifier": "real CIC-IDS-2018 LSTM world model",
+  "model": "pytorch_lstm",
+  "compared_with": "benchmark_cicids2018.json",
+  "sequence_length": 10,
+  "window_seconds": 60,
+  "n_train_sequences": 1589,
+  "n_test_sequences": 1580,
+  "architecture": {
+    "encoder": "LSTM(input=18, hidden=64, layers=1)",
+    "current_stage_head": "Linear(64, 6)",
+    "rollout": "LSTMCell(64) fed by a soft distribution over 6 stages embedded to 16 dimensions",
+    "features": [
+      "n_flows",
+      "log_mean_duration",
+      "mean_fwd_pkts",
+      "mean_bwd_pkts",
+      "log_mean_fwd_bytes",
+      "log_mean_bwd_bytes",
+      "syn_ratio",
+      "rst_ratio",
+      "uniq_dst_ports",
+      "log_mean_iat",
+      "mean_init_fwd_win_byts",
+      "mean_init_bwd_win_byts",
+      "psh_ratio",
+      "ack_ratio",
+      "fin_ratio",
+      "urg_ratio",
+      "log_mean_flow_iat_max",
+      "log_mean_pkt_len_var"
+    ],
+    "stages": [
+      "benign",
+      "reconnaissance",
+      "initial_access",
+      "lateral_movement",
+      "command_and_control",
+      "exfiltration"
+    ]
+  },
+  "training": {
+    "seed": 0,
+    "epochs": 30,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "batch_size": 64,
+    "loss": "mean of class-weighted cross-entropy on the current stage and the next 3 stages",
+    "first_epoch_loss": 1.597032,
+    "last_epoch_loss": 0.067538,
+    "epoch_loss": [
+      1.597032,
+      0.814457,
+      0.400267,
+      0.302764,
+      0.263644,
+      0.246846,
+      0.220869,
+      0.207083,
+      0.184908,
+      0.186291,
+      0.182539,
+      0.165846,
+      0.156242,
+      0.155347,
+      0.138298,
+      0.134842,
+      0.129889,
+      0.12962,
+      0.111059,
+      0.106436,
+      0.115283,
+      0.101577,
+      0.101736,
+      0.100559,
+      0.081007,
+      0.080661,
+      0.094178,
+      0.069973,
+      0.068365,
+      0.067538
+    ],
+    "normalization": "StandardScaler fit only on training-session windows",
+    "sequences": "Each sequence and its future labels stay inside one session. Train sequences use only split=train. Test sequences use only split=test."
+  },
+  "split": {
+    "method": "same future-session holdout as cicids.py",
+    "n_train_windows": 1661,
+    "n_test_windows": 1652,
+    "train_time": [
+      "2018-02-14 01:00:00",
+      "2018-03-02 05:30:00"
+    ],
+    "test_time": [
+      "2018-02-14 08:28:00",
+      "2018-03-02 12:59:00"
+    ]
+  },
+  "label_to_stage": {
+    "benign": {
+      "stage": "benign",
+      "note": "CIC class Benign. This is the dataset's benign label, not a MITRE tactic."
+    },
+    "ftp-bruteforce": {
+      "stage": "initial_access",
+      "note": "Proxy only. CIC name for FTP password guessing against an exposed service. The CSV does not assign a MITRE tactic. initial_access is the closest of the six PREDICT-X stages; credential access is not one of those stages."
+    },
+    "ssh-bruteforce": {
+      "stage": "initial_access",
+      "note": "Proxy only. CIC name for SSH password guessing. Same limitation as FTP-BruteForce."
+    },
+    "infilteration": {
+      "stage": "lateral_movement",
+      "note": "Proxy only. The files spell this class Infilteration. On 2018-02-28 and 2018-03-01 that one label covers the infiltration scenario and does not separate foothold, discovery, command-and-control, or exfiltration. lateral_movement is the closest single PREDICT-X stage for post-compromise internal activity, not a per-flow MITRE annotation."
+    },
+    "bot": {
+      "stage": "command_and_control",
+      "note": "Proxy only. CIC name for the Friday botnet scenario. The CSV does not assign a MITRE tactic. command_and_control is the closest of the six PREDICT-X stages for an established bot talking to its controller, not a per-flow MITRE annotation."
+    },
+    "brute force -web": {
+      "stage": "initial_access",
+      "note": "Proxy only. CIC name for HTTP password guessing, including the 2018-02-22 and 2018-02-23 web-attack captures. The CSV does not assign a MITRE tactic. initial_access is the closest of the six PREDICT-X stages; credential access is not one of those stages."
+    },
+    "brute force -xss": {
+      "stage": "initial_access",
+      "note": "Proxy only. CIC name for cross-site scripting against a web application. The CSV does not assign a MITRE tactic. initial_access is the closest of the six PREDICT-X stages for an exploit aimed at the exposed application, not a per-flow MITRE annotation."
+    },
+    "sql injection": {
+      "stage": "initial_access",
+      "note": "Proxy only. CIC name for SQL injection against a web application. The CSV does not assign a MITRE tactic. initial_access is the closest of the six PREDICT-X stages for an application exploit, not a per-flow MITRE annotation."
+    }
+  },
+  "stages_not_assigned": [
+    "reconnaissance",
+    "exfiltration"
+  ],
+  "stage_mapping_disclaimer": "CIC-IDS-2018 Label values are attack-class names. They are not MITRE ATT&CK tactics and they are not PREDICT-X stages. The mapping is the cicids.py proxy.",
+  "persistence": {
+    "test_next_window_same_stage": 0.9892,
+    "test_plus_3_same_stage": 0.9753,
+    "train_sessions": {
+      "adjacent_window_pairs": 1655,
+      "stage_changes": 29,
+      "change_rate": 0.0175
+    },
+    "test_sessions": {
+      "adjacent_window_pairs": 1646,
+      "stage_changes": 17,
+      "change_rate": 0.0103
+    }
+  },
+  "results": [
+    {
+      "horizon": 0,
+      "f1": 0.6411,
+      "precision": 0.6355,
+      "recall": 0.6745,
+      "fpr": 0.289
+    },
+    {
+      "horizon": 1,
+      "f1": 0.6304,
+      "precision": 0.6159,
+      "recall": 0.6614,
+      "fpr": 0.2731
+    },
+    {
+      "horizon": 3,
+      "f1": 0.6552,
+      "precision": 0.6881,
+      "recall": 0.6343,
+      "fpr": 0.2679
+    }
+  ],
+  "comparison": [
+    {
+      "horizon": 0,
+      "lstm": {
+        "f1": 0.6411,
+        "precision": 0.6355,
+        "recall": 0.6745,
+        "fpr": 0.289
+      },
+      "logistic_published": {
+        "f1": 0.6069,
+        "precision": 0.5822,
+        "recall": 0.7308,
+        "fpr": 0.4844
+      },
+      "logistic_same_test_endpoints": {
+        "f1": 0.6117,
+        "precision": 0.5885,
+        "recall": 0.7287,
+        "fpr": 0.4905
+      },
+      "lstm_f1_minus_published": 0.0342,
+      "lstm_f1_minus_same_endpoints": 0.0294
+    },
+    {
+      "horizon": 1,
+      "lstm": {
+        "f1": 0.6304,
+        "precision": 0.6159,
+        "recall": 0.6614,
+        "fpr": 0.2731
+      },
+      "logistic_published": {
+        "f1": 0.6125,
+        "precision": 0.5925,
+        "recall": 0.7411,
+        "fpr": 0.4933
+      },
+      "logistic_same_test_endpoints": {
+        "f1": 0.6179,
+        "precision": 0.5996,
+        "recall": 0.7394,
+        "fpr": 0.4986
+      },
+      "lstm_f1_minus_published": 0.0179,
+      "lstm_f1_minus_same_endpoints": 0.0125
+    },
+    {
+      "horizon": 3,
+      "lstm": {
+        "f1": 0.6552,
+        "precision": 0.6881,
+        "recall": 0.6343,
+        "fpr": 0.2679
+      },
+      "logistic_published": {
+        "f1": 0.5713,
+        "precision": 0.5532,
+        "recall": 0.6996,
+        "fpr": 0.5376
+      },
+      "logistic_same_test_endpoints": {
+        "f1": 0.5769,
+        "precision": 0.5603,
+        "recall": 0.6986,
+        "fpr": 0.5415
+      },
+      "lstm_f1_minus_published": 0.0839,
+      "lstm_f1_minus_same_endpoints": 0.0783
+    }
+  ],
+  "logistic_baseline_unchanged": [
+    "baseline_cicids2018.joblib",
+    "benchmark_cicids2018.json",
+    "baseline.joblib",
+    "benchmark.json"
+  ],
+  "f1_comparison_note": "Macro F1 versus the published logistic benchmark: h0 +0.0342, h1 +0.0179, h3 +0.0839. Same-endpoint logistic rescore: h0 +0.0294, h1 +0.0125, h3 +0.0783. A positive number means the LSTM F1 is higher on that horizon. It is not an overall claim.",
+  "rollout_check": {
+    "windows": 272,
+    "shape": [
+      3,
+      6
+    ],
+    "row_sums": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  }
+}

@@ -1,0 +1,275 @@
+{
+  "dataset": "CIC-IDS-2018",
+  "identifier": "real CIC-IDS-2018 CICFlowMeter results",
+  "model": "logistic_regression",
+  "files": [
+    "Wednesday-14-02-2018_TrafficForML_CICFlowMeter.csv",
+    "Thursday-01-03-2018_TrafficForML_CICFlowMeter.csv",
+    "Friday-02-03-2018_TrafficForML_CICFlowMeter.csv",
+    "Wednesday-28-02-2018_TrafficForML_CICFlowMeter.csv",
+    "Thursday-22-02-2018_TrafficForML_CICFlowMeter.csv",
+    "Friday-23-02-2018_TrafficForML_CICFlowMeter.csv"
+  ],
+  "data_dir": "C:\\PREDICT-X-data\\CIC-IDS2018",
+  "copied_into_repository": false,
+  "rows_read": 5138529,
+  "rows_used": 5138457,
+  "rows_dropped": 72,
+  "files_detail": [
+    {
+      "file": "Wednesday-14-02-2018_TrafficForML_CICFlowMeter.csv",
+      "rows_read": 1048575,
+      "rows_used": 1048570,
+      "dropped_header": 0,
+      "dropped_timestamp": 5,
+      "flow_labels": {
+        "FTP-BruteForce": 193360,
+        "SSH-Bruteforce": 187589,
+        "Benign": 667621
+      }
+    },
+    {
+      "file": "Thursday-01-03-2018_TrafficForML_CICFlowMeter.csv",
+      "rows_read": 331125,
+      "rows_used": 331100,
+      "dropped_header": 25,
+      "dropped_timestamp": 0,
+      "flow_labels": {
+        "Benign": 238037,
+        "Infilteration": 93063
+      }
+    },
+    {
+      "file": "Friday-02-03-2018_TrafficForML_CICFlowMeter.csv",
+      "rows_read": 1048575,
+      "rows_used": 1048575,
+      "dropped_header": 0,
+      "dropped_timestamp": 0,
+      "flow_labels": {
+        "Bot": 286191,
+        "Benign": 762384
+      }
+    },
+    {
+      "file": "Wednesday-28-02-2018_TrafficForML_CICFlowMeter.csv",
+      "rows_read": 613104,
+      "rows_used": 613071,
+      "dropped_header": 33,
+      "dropped_timestamp": 0,
+      "flow_labels": {
+        "Benign": 544200,
+        "Infilteration": 68871
+      }
+    },
+    {
+      "file": "Thursday-22-02-2018_TrafficForML_CICFlowMeter.csv",
+      "rows_read": 1048575,
+      "rows_used": 1048566,
+      "dropped_header": 0,
+      "dropped_timestamp": 9,
+      "flow_labels": {
+        "Benign": 1048204,
+        "Brute Force -Web": 249,
+        "Brute Force -XSS": 79,
+        "SQL Injection": 34
+      }
+    },
+    {
+      "file": "Friday-23-02-2018_TrafficForML_CICFlowMeter.csv",
+      "rows_read": 1048575,
+      "rows_used": 1048575,
+      "dropped_header": 0,
+      "dropped_timestamp": 0,
+      "flow_labels": {
+        "Benign": 1048009,
+        "Brute Force -Web": 362,
+        "Brute Force -XSS": 151,
+        "SQL Injection": 53
+      }
+    }
+  ],
+  "windows": 3313,
+  "episodes": 12,
+  "time_start": "2018-02-14 01:00:00",
+  "time_end": "2018-03-02 12:59:00",
+  "window_seconds": 60,
+  "attack_labels_flow": {
+    "FTP-BruteForce": 193360,
+    "SSH-Bruteforce": 187589,
+    "Benign": 4308455,
+    "Infilteration": 161934,
+    "Bot": 286191,
+    "Brute Force -Web": 611,
+    "Brute Force -XSS": 230,
+    "SQL Injection": 87
+  },
+  "attack_labels_window": {
+    "Benign": 2234,
+    "Bot": 342,
+    "Infilteration": 288,
+    "Brute Force -Web": 133,
+    "Brute Force -XSS": 108,
+    "FTP-BruteForce": 98,
+    "SSH-Bruteforce": 92,
+    "SQL Injection": 18
+  },
+  "stages_window": {
+    "benign": 2234,
+    "initial_access": 449,
+    "command_and_control": 342,
+    "lateral_movement": 288
+  },
+  "label_to_stage": {
+    "benign": {
+      "stage": "benign",
+      "note": "CIC class Benign. This is the dataset's benign label, not a MITRE tactic."
+    },
+    "ftp-bruteforce": {
+      "stage": "initial_access",
+      "note": "Proxy only. CIC name for FTP password guessing against an exposed service. The CSV does not assign a MITRE tactic. initial_access is the closest of the six PREDICT-X stages; credential access is not one of those stages."
+    },
+    "ssh-bruteforce": {
+      "stage": "initial_access",
+      "note": "Proxy only. CIC name for SSH password guessing. Same limitation as FTP-BruteForce."
+    },
+    "infilteration": {
+      "stage": "lateral_movement",
+      "note": "Proxy only. The files spell this class Infilteration. On 2018-02-28 and 2018-03-01 that one label covers the infiltration scenario and does not separate foothold, discovery, command-and-control, or exfiltration. lateral_movement is the closest single PREDICT-X stage for post-compromise internal activity, not a per-flow MITRE annotation."
+    },
+    "bot": {
+      "stage": "command_and_control",
+      "note": "Proxy only. CIC name for the Friday botnet scenario. The CSV does not assign a MITRE tactic. command_and_control is the closest of the six PREDICT-X stages for an established bot talking to its controller, not a per-flow MITRE annotation."
+    },
+    "brute force -web": {
+      "stage": "initial_access",
+      "note": "Proxy only. CIC name for HTTP password guessing, including the 2018-02-22 and 2018-02-23 web-attack captures. The CSV does not assign a MITRE tactic. initial_access is the closest of the six PREDICT-X stages; credential access is not one of those stages."
+    },
+    "brute force -xss": {
+      "stage": "initial_access",
+      "note": "Proxy only. CIC name for cross-site scripting against a web application. The CSV does not assign a MITRE tactic. initial_access is the closest of the six PREDICT-X stages for an exploit aimed at the exposed application, not a per-flow MITRE annotation."
+    },
+    "sql injection": {
+      "stage": "initial_access",
+      "note": "Proxy only. CIC name for SQL injection against a web application. The CSV does not assign a MITRE tactic. initial_access is the closest of the six PREDICT-X stages for an application exploit, not a per-flow MITRE annotation."
+    }
+  },
+  "stages_not_assigned": [
+    "reconnaissance",
+    "exfiltration"
+  ],
+  "stage_mapping_disclaimer": "CIC-IDS-2018 Label values are attack-class names. They are not MITRE ATT&CK tactics and they are not PREDICT-X stages. The mapping above is an explicit proxy.",
+  "window_label_rule": "A window is labeled with its most frequent non-benign CIC label when any attack flow is present; otherwise Benign.",
+  "features": [
+    "n_flows",
+    "log_mean_duration",
+    "mean_fwd_pkts",
+    "mean_bwd_pkts",
+    "log_mean_fwd_bytes",
+    "log_mean_bwd_bytes",
+    "syn_ratio",
+    "rst_ratio",
+    "uniq_dst_ports",
+    "log_mean_iat",
+    "mean_init_fwd_win_byts",
+    "mean_init_bwd_win_byts",
+    "psh_ratio",
+    "ack_ratio",
+    "fin_ratio",
+    "urg_ratio",
+    "log_mean_flow_iat_max",
+    "log_mean_pkt_len_var"
+  ],
+  "unavailable_features": [
+    {
+      "feature": "uniq_src_ips",
+      "reason": "Omitted from CIC_FEATURES. These CICFlowMeter ML CSVs have no source-IP column."
+    },
+    {
+      "feature": "uniq_dst_ips",
+      "reason": "Omitted from CIC_FEATURES. These CICFlowMeter ML CSVs have no destination-IP column."
+    }
+  ],
+  "split": {
+    "method": "future session holdout inside each capture day",
+    "gap_seconds": 120,
+    "rule": "Windows are 60s. Within each day, a gap longer than 120s starts a new session. The earliest session is train. Later sessions are test. Horizon pairs stay inside one session, so a training window never predicts a test label. The logistic regression, horizons, scaler, and metrics are baseline.train.",
+    "train_time": [
+      "2018-02-14 01:00:00",
+      "2018-03-02 05:30:00"
+    ],
+    "test_time": [
+      "2018-02-14 08:28:00",
+      "2018-03-02 12:59:00"
+    ],
+    "n_train_episodes": 6,
+    "n_test_episodes": 6,
+    "train_stages": {
+      "benign": 1113,
+      "initial_access": 218,
+      "command_and_control": 175,
+      "lateral_movement": 155
+    },
+    "test_stages": {
+      "benign": 1121,
+      "initial_access": 231,
+      "command_and_control": 167,
+      "lateral_movement": 133
+    },
+    "pair_counts": [
+      {
+        "horizon": 0,
+        "n_train_pairs": 1661,
+        "n_test_pairs": 1652
+      },
+      {
+        "horizon": 1,
+        "n_train_pairs": 1655,
+        "n_test_pairs": 1646
+      },
+      {
+        "horizon": 3,
+        "n_train_pairs": 1643,
+        "n_test_pairs": 1634
+      }
+    ]
+  },
+  "results": [
+    {
+      "model": "logistic_regression",
+      "horizon": 0,
+      "f1": 0.6069,
+      "precision": 0.5822,
+      "recall": 0.7308,
+      "fpr": 0.4844,
+      "dataset": "CIC-IDS-2018",
+      "n_train_pairs": 1661,
+      "n_test_pairs": 1652
+    },
+    {
+      "model": "logistic_regression",
+      "horizon": 1,
+      "f1": 0.6125,
+      "precision": 0.5925,
+      "recall": 0.7411,
+      "fpr": 0.4933,
+      "dataset": "CIC-IDS-2018",
+      "n_train_pairs": 1655,
+      "n_test_pairs": 1646
+    },
+    {
+      "model": "logistic_regression",
+      "horizon": 3,
+      "f1": 0.5713,
+      "precision": 0.5532,
+      "recall": 0.6996,
+      "fpr": 0.5376,
+      "dataset": "CIC-IDS-2018",
+      "n_train_pairs": 1643,
+      "n_test_pairs": 1634
+    }
+  ],
+  "synthetic_artifacts_unchanged": [
+    "baseline.joblib",
+    "benchmark.json"
+  ]
+}

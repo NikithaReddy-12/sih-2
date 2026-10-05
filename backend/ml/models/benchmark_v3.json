@@ -1,0 +1,3867 @@
+{
+  "models": [
+    "logistic_window",
+    "logistic_flat10",
+    "persistence",
+    "oracle_persistence_unattainable",
+    "lstm"
+  ],
+  "horizons": [
+    0,
+    1,
+    3,
+    5
+  ],
+  "metrics": [
+    {
+      "model": "logistic_window",
+      "horizon": 0,
+      "source": "benchmark_v3.json",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.501613,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.463576,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.992908,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.103979,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "logistic_window",
+      "horizon": 1,
+      "source": "benchmark_v3.json",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.49085,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.388732,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.992806,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.139103,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "logistic_window",
+      "horizon": 3,
+      "source": "benchmark_v3.json",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.498524,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.439344,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.992593,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.109335,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "logistic_window",
+      "horizon": 5,
+      "source": "benchmark_v3.json",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.486053,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.381232,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.992366,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.134566,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "logistic_flat10",
+      "horizon": 0,
+      "source": "benchmark_v3.json",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.52712,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.599138,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.985816,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.059692,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "logistic_flat10",
+      "horizon": 1,
+      "source": "benchmark_v3.json",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.523557,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.598253,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.985612,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.058974,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "logistic_flat10",
+      "horizon": 3,
+      "source": "benchmark_v3.json",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.513897,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.556485,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.985185,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.067775,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "logistic_flat10",
+      "horizon": 5,
+      "source": "benchmark_v3.json",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.50574,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.513944,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.984733,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.077806,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "persistence",
+      "horizon": 0,
+      "source": "benchmark_v3.json",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.501613,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.463576,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.992908,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.103979,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "persistence",
+      "horizon": 1,
+      "source": "benchmark_v3.json",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.499472,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.456954,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.992806,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.105128,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "persistence",
+      "horizon": 3,
+      "source": "benchmark_v3.json",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.495145,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.443709,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.992593,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.107417,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "persistence",
+      "horizon": 5,
+      "source": "benchmark_v3.json",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.490755,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.430464,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.992366,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.109694,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "oracle_persistence_unattainable",
+      "horizon": 0,
+      "source": "benchmark_v3.json",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 1.0,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 1.0,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 1.0,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "oracle_persistence_unattainable",
+      "horizon": 1,
+      "source": "benchmark_v3.json",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.994269,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.964539,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.978417,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.003205,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "oracle_persistence_unattainable",
+      "horizon": 3,
+      "source": "benchmark_v3.json",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.983875,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.93617,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.977778,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.005754,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "oracle_persistence_unattainable",
+      "horizon": 5,
+      "source": "benchmark_v3.json",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.97318,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.907801,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.977099,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.008291,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "lstm",
+      "horizon": 0,
+      "source": "benchmark_v3.json",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.41169,
+        "std": 0.091968
+      },
+      "precision": {
+        "mean": 0.279744,
+        "std": 0.104751
+      },
+      "recall": {
+        "mean": 0.988652,
+        "std": 0.006343
+      },
+      "fpr": {
+        "mean": 0.276893,
+        "std": 0.163823
+      }
+    },
+    {
+      "model": "lstm",
+      "horizon": 1,
+      "source": "benchmark_v3.json",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.517608,
+        "std": 0.012268
+      },
+      "precision": {
+        "mean": 0.489596,
+        "std": 0.102901
+      },
+      "recall": {
+        "mean": 0.984173,
+        "std": 0.006019
+      },
+      "fpr": {
+        "mean": 0.099103,
+        "std": 0.045896
+      }
+    },
+    {
+      "model": "lstm",
+      "horizon": 3,
+      "source": "benchmark_v3.json",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.518267,
+        "std": 0.008473
+      },
+      "precision": {
+        "mean": 0.514849,
+        "std": 0.091545
+      },
+      "recall": {
+        "mean": 0.983704,
+        "std": 0.006197
+      },
+      "fpr": {
+        "mean": 0.085038,
+        "std": 0.035187
+      }
+    },
+    {
+      "model": "lstm",
+      "horizon": 5,
+      "source": "benchmark_v3.json",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.513903,
+        "std": 0.007196
+      },
+      "precision": {
+        "mean": 0.490676,
+        "std": 0.079983
+      },
+      "recall": {
+        "mean": 0.981679,
+        "std": 0.004181
+      },
+      "fpr": {
+        "mean": 0.089286,
+        "std": 0.031754
+      }
+    }
+  ],
+  "split": {
+    "method": "attack_span_then_60_15_25",
+    "rule": "On a day with attack windows, windows before the first-to-last attack span are train, the span is 60/15/25 with purge gaps, and windows after the span are test. A day with no attack windows stays 60/15/25.",
+    "fractions": {
+      "train": 0.6,
+      "val": 0.15,
+      "test": 0.25
+    },
+    "purge_windows": 15,
+    "gap_ms": 600000,
+    "seq_len": 10,
+    "k": 5,
+    "f1_definition": "macro-F1 over proxy stages with test support, excluding classes marked n too small",
+    "persistence": "repeats the logistic_window predicted current stage; oracle_persistence_unattainable repeats the true current stage",
+    "n_too_small": [
+      "lateral_movement"
+    ],
+    "train": {
+      "benign": 3045,
+      "initial_access": 98,
+      "lateral_movement": 125,
+      "command_and_control": 175,
+      "windows": 3443
+    },
+    "val": {
+      "benign": 500,
+      "initial_access": 2,
+      "lateral_movement": 84,
+      "command_and_control": 33,
+      "windows": 619
+    },
+    "test": {
+      "benign": 1718,
+      "initial_access": 75,
+      "lateral_movement": 7,
+      "command_and_control": 81,
+      "windows": 1881
+    },
+    "purge": {
+      "benign": 256,
+      "initial_access": 15,
+      "lateral_movement": 28,
+      "command_and_control": 30,
+      "windows": 329
+    }
+  },
+  "notes": [
+    {
+      "source": "benchmark_v3.json",
+      "name": "stage_labels",
+      "text": "Stage labels are proxy mappings."
+    },
+    {
+      "source": "benchmark_v3.json",
+      "name": "excluded_attacks",
+      "text": "DoS, DDoS and Web Attacks are excluded."
+    },
+    {
+      "source": "benchmark_v3.json",
+      "name": "missing_stages",
+      "text": "Reconnaissance and exfiltration have no real data."
+    },
+    {
+      "source": "benchmark_v3.json",
+      "name": "coverage",
+      "text": "BruteForce appears on one capture day and Bot on one."
+    },
+    {
+      "source": "benchmark_v3.json",
+      "name": "dataset",
+      "text": "Evaluation is single-dataset."
+    },
+    {
+      "source": "benchmark_v3.json",
+      "name": "verdict",
+      "text": "LSTM beats both logistic variants and persistence by more than one standard deviation on macro-F1 at h5. It does not at h0 (logistic_window lstm 0.4117\u00b10.0920 vs 0.5016\u00b10.0000, logistic_flat10 lstm 0.4117\u00b10.0920 vs 0.5271\u00b10.0000, persistence lstm 0.4117\u00b10.0920 vs 0.5016\u00b10.0000); h1 (logistic_flat10 lstm 0.5176\u00b10.0123 vs 0.5236\u00b10.0000); h3 (logistic_flat10 lstm 0.5183\u00b10.0085 vs 0.5139\u00b10.0000)."
+    }
+  ],
+  "onset": [
+    {
+      "model": "logistic_window",
+      "feature_set": "flow+packet",
+      "precision": {
+        "mean": 0.037453,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.666667,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.166559,
+        "std": 0.0
+      },
+      "lead_windows": {
+        "mean": 2.0,
+        "std": 0.0
+      },
+      "n": {
+        "mean": 1558.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "logistic_flat10",
+      "feature_set": "flow+packet",
+      "precision": {
+        "mean": 0.038251,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.466667,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.114064,
+        "std": 0.0
+      },
+      "lead_windows": {
+        "mean": 0.857143,
+        "std": 0.0
+      },
+      "n": {
+        "mean": 1558.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "persistence",
+      "feature_set": "flow+packet",
+      "precision": {
+        "mean": 0.055556,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.6,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.099157,
+        "std": 0.0
+      },
+      "lead_windows": {
+        "mean": 1.888889,
+        "std": 0.0
+      },
+      "n": {
+        "mean": 1558.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "oracle_persistence_unattainable",
+      "feature_set": "flow+packet",
+      "precision": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "lead_windows": {
+        "mean": null,
+        "std": null
+      },
+      "n": {
+        "mean": 1558.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "lstm",
+      "feature_set": "flow+packet",
+      "precision": {
+        "mean": 0.02141,
+        "std": 0.020321
+      },
+      "recall": {
+        "mean": 0.293333,
+        "std": 0.328634
+      },
+      "fpr": {
+        "mean": 0.10512,
+        "std": 0.036614
+      },
+      "lead_windows": {
+        "mean": 2.027778,
+        "std": 0.048113
+      },
+      "n": {
+        "mean": 1558.0,
+        "std": 0.0
+      }
+    }
+  ],
+  "loao": [
+    {
+      "model": "logistic_flat10",
+      "held_out": "command_and_control",
+      "recall": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "n": {
+        "mean": 72.0,
+        "std": 0.0
+      },
+      "pred_benign": {
+        "mean": 0.958333,
+        "std": 0.0
+      },
+      "pred_initial_access": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "pred_lateral_movement": {
+        "mean": 0.041667,
+        "std": 0.0
+      },
+      "pred_command_and_control": {
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "logistic_flat10",
+      "held_out": "initial_access",
+      "recall": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "n": {
+        "mean": 66.0,
+        "std": 0.0
+      },
+      "pred_benign": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "pred_initial_access": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "pred_lateral_movement": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "pred_command_and_control": {
+        "mean": 1.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "logistic_window",
+      "held_out": "command_and_control",
+      "recall": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "n": {
+        "mean": 72.0,
+        "std": 0.0
+      },
+      "pred_benign": {
+        "mean": 0.305556,
+        "std": 0.0
+      },
+      "pred_initial_access": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "pred_lateral_movement": {
+        "mean": 0.694444,
+        "std": 0.0
+      },
+      "pred_command_and_control": {
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "logistic_window",
+      "held_out": "initial_access",
+      "recall": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "n": {
+        "mean": 66.0,
+        "std": 0.0
+      },
+      "pred_benign": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "pred_initial_access": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "pred_lateral_movement": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "pred_command_and_control": {
+        "mean": 1.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "lstm",
+      "held_out": "command_and_control",
+      "recall": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "n": {
+        "mean": 72.0,
+        "std": 0.0
+      },
+      "pred_benign": {
+        "mean": 0.636111,
+        "std": 0.261022
+      },
+      "pred_initial_access": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "pred_lateral_movement": {
+        "mean": 0.363889,
+        "std": 0.261022
+      },
+      "pred_command_and_control": {
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "lstm",
+      "held_out": "initial_access",
+      "recall": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "n": {
+        "mean": 66.0,
+        "std": 0.0
+      },
+      "pred_benign": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "pred_initial_access": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "pred_lateral_movement": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "pred_command_and_control": {
+        "mean": 1.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "logistic_window",
+      "held_out": "lateral_movement",
+      "recall": "n too small",
+      "n": {
+        "mean": 7,
+        "std": 0.0
+      },
+      "pred_benign": "n too small",
+      "pred_initial_access": "n too small",
+      "pred_lateral_movement": "n too small",
+      "pred_command_and_control": "n too small"
+    },
+    {
+      "model": "logistic_flat10",
+      "held_out": "lateral_movement",
+      "recall": "n too small",
+      "n": {
+        "mean": 7,
+        "std": 0.0
+      },
+      "pred_benign": "n too small",
+      "pred_initial_access": "n too small",
+      "pred_lateral_movement": "n too small",
+      "pred_command_and_control": "n too small"
+    },
+    {
+      "model": "lstm",
+      "held_out": "lateral_movement",
+      "recall": "n too small",
+      "n": {
+        "mean": 7,
+        "std": 0.0
+      },
+      "pred_benign": "n too small",
+      "pred_initial_access": "n too small",
+      "pred_lateral_movement": "n too small",
+      "pred_command_and_control": "n too small"
+    }
+  ],
+  "ablation": [
+    {
+      "model": "logistic_window",
+      "horizon": 0,
+      "source": "benchmark_v3.json",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.501613,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.463576,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.992908,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.103979,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "logistic_window",
+      "horizon": 1,
+      "source": "benchmark_v3.json",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.49085,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.388732,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.992806,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.139103,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "logistic_window",
+      "horizon": 3,
+      "source": "benchmark_v3.json",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.498524,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.439344,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.992593,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.109335,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "logistic_window",
+      "horizon": 5,
+      "source": "benchmark_v3.json",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.486053,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.381232,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.992366,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.134566,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "logistic_flat10",
+      "horizon": 0,
+      "source": "benchmark_v3.json",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.52712,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.599138,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.985816,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.059692,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "logistic_flat10",
+      "horizon": 1,
+      "source": "benchmark_v3.json",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.523557,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.598253,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.985612,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.058974,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "logistic_flat10",
+      "horizon": 3,
+      "source": "benchmark_v3.json",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.513897,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.556485,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.985185,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.067775,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "logistic_flat10",
+      "horizon": 5,
+      "source": "benchmark_v3.json",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.50574,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.513944,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.984733,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.077806,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "lstm",
+      "horizon": 0,
+      "source": "benchmark_v3.json",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.41169,
+        "std": 0.091968
+      },
+      "precision": {
+        "mean": 0.279744,
+        "std": 0.104751
+      },
+      "recall": {
+        "mean": 0.988652,
+        "std": 0.006343
+      },
+      "fpr": {
+        "mean": 0.276893,
+        "std": 0.163823
+      }
+    },
+    {
+      "model": "lstm",
+      "horizon": 1,
+      "source": "benchmark_v3.json",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.517608,
+        "std": 0.012268
+      },
+      "precision": {
+        "mean": 0.489596,
+        "std": 0.102901
+      },
+      "recall": {
+        "mean": 0.984173,
+        "std": 0.006019
+      },
+      "fpr": {
+        "mean": 0.099103,
+        "std": 0.045896
+      }
+    },
+    {
+      "model": "lstm",
+      "horizon": 3,
+      "source": "benchmark_v3.json",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.518267,
+        "std": 0.008473
+      },
+      "precision": {
+        "mean": 0.514849,
+        "std": 0.091545
+      },
+      "recall": {
+        "mean": 0.983704,
+        "std": 0.006197
+      },
+      "fpr": {
+        "mean": 0.085038,
+        "std": 0.035187
+      }
+    },
+    {
+      "model": "lstm",
+      "horizon": 5,
+      "source": "benchmark_v3.json",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.513903,
+        "std": 0.007196
+      },
+      "precision": {
+        "mean": 0.490676,
+        "std": 0.079983
+      },
+      "recall": {
+        "mean": 0.981679,
+        "std": 0.004181
+      },
+      "fpr": {
+        "mean": 0.089286,
+        "std": 0.031754
+      }
+    },
+    {
+      "model": "logistic_window",
+      "horizon": 0,
+      "source": "benchmark_v3.json",
+      "feature_set": "flow",
+      "f1": {
+        "mean": 0.498915,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.496403,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.978723,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.089859,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "logistic_window",
+      "horizon": 1,
+      "source": "benchmark_v3.json",
+      "feature_set": "flow",
+      "f1": {
+        "mean": 0.500098,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.455446,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.992806,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.105769,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "logistic_window",
+      "horizon": 3,
+      "source": "benchmark_v3.json",
+      "feature_set": "flow",
+      "f1": {
+        "mean": 0.498996,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.475,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.985185,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.09399,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "logistic_window",
+      "horizon": 5,
+      "source": "benchmark_v3.json",
+      "feature_set": "flow",
+      "f1": {
+        "mean": 0.489468,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.399381,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.984733,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.123724,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "logistic_flat10",
+      "horizon": 0,
+      "source": "benchmark_v3.json",
+      "feature_set": "flow",
+      "f1": {
+        "mean": 0.528777,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.69,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.978723,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.039795,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "logistic_flat10",
+      "horizon": 1,
+      "source": "benchmark_v3.json",
+      "feature_set": "flow",
+      "f1": {
+        "mean": 0.526151,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.666667,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.978417,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.04359,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "logistic_flat10",
+      "horizon": 3,
+      "source": "benchmark_v3.json",
+      "feature_set": "flow",
+      "f1": {
+        "mean": 0.521128,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.608295,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.977778,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.054348,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "logistic_flat10",
+      "horizon": 5,
+      "source": "benchmark_v3.json",
+      "feature_set": "flow",
+      "f1": {
+        "mean": 0.508691,
+        "std": 0.0
+      },
+      "precision": {
+        "mean": 0.556034,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.984733,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.065689,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "lstm",
+      "horizon": 0,
+      "source": "benchmark_v3.json",
+      "feature_set": "flow",
+      "f1": {
+        "mean": 0.455288,
+        "std": 0.118931
+      },
+      "precision": {
+        "mean": 0.412693,
+        "std": 0.237188
+      },
+      "recall": {
+        "mean": 0.982979,
+        "std": 0.003885
+      },
+      "fpr": {
+        "mean": 0.229782,
+        "std": 0.235095
+      }
+    },
+    {
+      "model": "lstm",
+      "horizon": 1,
+      "source": "benchmark_v3.json",
+      "feature_set": "flow",
+      "f1": {
+        "mean": 0.521979,
+        "std": 0.006742
+      },
+      "precision": {
+        "mean": 0.580116,
+        "std": 0.062991
+      },
+      "recall": {
+        "mean": 0.981295,
+        "std": 0.00394
+      },
+      "fpr": {
+        "mean": 0.064872,
+        "std": 0.017968
+      }
+    },
+    {
+      "model": "lstm",
+      "horizon": 3,
+      "source": "benchmark_v3.json",
+      "feature_set": "flow",
+      "f1": {
+        "mean": 0.520117,
+        "std": 0.002939
+      },
+      "precision": {
+        "mean": 0.575693,
+        "std": 0.044351
+      },
+      "recall": {
+        "mean": 0.979259,
+        "std": 0.003313
+      },
+      "fpr": {
+        "mean": 0.063043,
+        "std": 0.011881
+      }
+    },
+    {
+      "model": "lstm",
+      "horizon": 5,
+      "source": "benchmark_v3.json",
+      "feature_set": "flow",
+      "f1": {
+        "mean": 0.515512,
+        "std": 0.003737
+      },
+      "precision": {
+        "mean": 0.555221,
+        "std": 0.062813
+      },
+      "recall": {
+        "mean": 0.978626,
+        "std": 0.003414
+      },
+      "fpr": {
+        "mean": 0.066964,
+        "std": 0.016115
+      }
+    }
+  ],
+  "per_stage": [
+    {
+      "model": "logistic_window",
+      "horizon": 0,
+      "stage": "benign",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.944839,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 1558.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "logistic_window",
+      "horizon": 0,
+      "stage": "initial_access",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 66.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "logistic_window",
+      "horizon": 0,
+      "stage": "lateral_movement",
+      "feature_set": "flow+packet",
+      "f1": "n too small",
+      "support": {
+        "mean": 3.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "logistic_window",
+      "horizon": 0,
+      "stage": "command_and_control",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.56,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 72.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "logistic_window",
+      "horizon": 1,
+      "stage": "benign",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.924931,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 1560.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "logistic_window",
+      "horizon": 1,
+      "stage": "initial_access",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 65.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "logistic_window",
+      "horizon": 1,
+      "stage": "lateral_movement",
+      "feature_set": "flow+packet",
+      "f1": "n too small",
+      "support": {
+        "mean": 3.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "logistic_window",
+      "horizon": 1,
+      "stage": "command_and_control",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.547619,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 71.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "logistic_window",
+      "horizon": 3,
+      "stage": "benign",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.941853,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 1564.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "logistic_window",
+      "horizon": 3,
+      "stage": "initial_access",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 63.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "logistic_window",
+      "horizon": 3,
+      "stage": "lateral_movement",
+      "feature_set": "flow+packet",
+      "f1": "n too small",
+      "support": {
+        "mean": 3.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "logistic_window",
+      "horizon": 3,
+      "stage": "command_and_control",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.553719,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 69.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "logistic_window",
+      "horizon": 5,
+      "stage": "benign",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.927546,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 1568.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "logistic_window",
+      "horizon": 5,
+      "stage": "initial_access",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 61.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "logistic_window",
+      "horizon": 5,
+      "stage": "lateral_movement",
+      "feature_set": "flow+packet",
+      "f1": "n too small",
+      "support": {
+        "mean": 3.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "logistic_window",
+      "horizon": 5,
+      "stage": "command_and_control",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.530612,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 67.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "logistic_flat10",
+      "horizon": 0,
+      "stage": "benign",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.968595,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 1558.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "logistic_flat10",
+      "horizon": 0,
+      "stage": "initial_access",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 66.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "logistic_flat10",
+      "horizon": 0,
+      "stage": "lateral_movement",
+      "feature_set": "flow+packet",
+      "f1": "n too small",
+      "support": {
+        "mean": 3.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "logistic_flat10",
+      "horizon": 0,
+      "stage": "command_and_control",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.612766,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 72.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "logistic_flat10",
+      "horizon": 1,
+      "stage": "benign",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.968977,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 1560.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "logistic_flat10",
+      "horizon": 1,
+      "stage": "initial_access",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 65.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "logistic_flat10",
+      "horizon": 1,
+      "stage": "lateral_movement",
+      "feature_set": "flow+packet",
+      "f1": "n too small",
+      "support": {
+        "mean": 3.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "logistic_flat10",
+      "horizon": 1,
+      "stage": "command_and_control",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.601695,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 71.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "logistic_flat10",
+      "horizon": 3,
+      "stage": "benign",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.964286,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 1564.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "logistic_flat10",
+      "horizon": 3,
+      "stage": "initial_access",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 63.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "logistic_flat10",
+      "horizon": 3,
+      "stage": "lateral_movement",
+      "feature_set": "flow+packet",
+      "f1": "n too small",
+      "support": {
+        "mean": 3.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "logistic_flat10",
+      "horizon": 3,
+      "stage": "command_and_control",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.577406,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 69.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "logistic_flat10",
+      "horizon": 5,
+      "stage": "benign",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.958886,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 1568.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "logistic_flat10",
+      "horizon": 5,
+      "stage": "initial_access",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 61.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "logistic_flat10",
+      "horizon": 5,
+      "stage": "lateral_movement",
+      "feature_set": "flow+packet",
+      "f1": "n too small",
+      "support": {
+        "mean": 3.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "logistic_flat10",
+      "horizon": 5,
+      "stage": "command_and_control",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.558333,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 67.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "persistence",
+      "horizon": 0,
+      "stage": "benign",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.944839,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 1558.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "persistence",
+      "horizon": 0,
+      "stage": "initial_access",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 66.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "persistence",
+      "horizon": 0,
+      "stage": "lateral_movement",
+      "feature_set": "flow+packet",
+      "f1": "n too small",
+      "support": {
+        "mean": 3.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "persistence",
+      "horizon": 0,
+      "stage": "command_and_control",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.56,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 72.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "persistence",
+      "horizon": 1,
+      "stage": "benign",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.9442,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 1560.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "persistence",
+      "horizon": 1,
+      "stage": "initial_access",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 65.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "persistence",
+      "horizon": 1,
+      "stage": "lateral_movement",
+      "feature_set": "flow+packet",
+      "f1": "n too small",
+      "support": {
+        "mean": 3.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "persistence",
+      "horizon": 1,
+      "stage": "command_and_control",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.554217,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 71.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "persistence",
+      "horizon": 3,
+      "stage": "benign",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.942925,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 1564.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "persistence",
+      "horizon": 3,
+      "stage": "initial_access",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 63.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "persistence",
+      "horizon": 3,
+      "stage": "lateral_movement",
+      "feature_set": "flow+packet",
+      "f1": "n too small",
+      "support": {
+        "mean": 3.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "persistence",
+      "horizon": 3,
+      "stage": "command_and_control",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.54251,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 69.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "persistence",
+      "horizon": 5,
+      "stage": "benign",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.941653,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 1568.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "persistence",
+      "horizon": 5,
+      "stage": "initial_access",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 61.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "persistence",
+      "horizon": 5,
+      "stage": "lateral_movement",
+      "feature_set": "flow+packet",
+      "f1": "n too small",
+      "support": {
+        "mean": 3.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "persistence",
+      "horizon": 5,
+      "stage": "command_and_control",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.530612,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 67.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "oracle_persistence_unattainable",
+      "horizon": 0,
+      "stage": "benign",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 1.0,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 1558.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "oracle_persistence_unattainable",
+      "horizon": 0,
+      "stage": "initial_access",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 1.0,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 66.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "oracle_persistence_unattainable",
+      "horizon": 0,
+      "stage": "lateral_movement",
+      "feature_set": "flow+packet",
+      "f1": "n too small",
+      "support": {
+        "mean": 3.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "oracle_persistence_unattainable",
+      "horizon": 0,
+      "stage": "command_and_control",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 1.0,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 72.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "oracle_persistence_unattainable",
+      "horizon": 1,
+      "stage": "benign",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.997434,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 1560.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "oracle_persistence_unattainable",
+      "horizon": 1,
+      "stage": "initial_access",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.992366,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 65.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "oracle_persistence_unattainable",
+      "horizon": 1,
+      "stage": "lateral_movement",
+      "feature_set": "flow+packet",
+      "f1": "n too small",
+      "support": {
+        "mean": 3.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "oracle_persistence_unattainable",
+      "horizon": 1,
+      "stage": "command_and_control",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.993007,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 71.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "oracle_persistence_unattainable",
+      "horizon": 3,
+      "stage": "benign",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.996156,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 1564.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "oracle_persistence_unattainable",
+      "horizon": 3,
+      "stage": "initial_access",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.976744,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 63.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "oracle_persistence_unattainable",
+      "horizon": 3,
+      "stage": "lateral_movement",
+      "feature_set": "flow+packet",
+      "f1": "n too small",
+      "support": {
+        "mean": 3.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "oracle_persistence_unattainable",
+      "horizon": 3,
+      "stage": "command_and_control",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.978723,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 69.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "oracle_persistence_unattainable",
+      "horizon": 5,
+      "stage": "benign",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.994882,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 1568.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "oracle_persistence_unattainable",
+      "horizon": 5,
+      "stage": "initial_access",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.96063,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 61.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "oracle_persistence_unattainable",
+      "horizon": 5,
+      "stage": "lateral_movement",
+      "feature_set": "flow+packet",
+      "f1": "n too small",
+      "support": {
+        "mean": 3.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "oracle_persistence_unattainable",
+      "horizon": 5,
+      "stage": "command_and_control",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.964029,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 67.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "lstm",
+      "horizon": 0,
+      "stage": "benign",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.829593,
+        "std": 0.121325
+      },
+      "support": {
+        "mean": 1558.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "lstm",
+      "horizon": 0,
+      "stage": "initial_access",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 66.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "lstm",
+      "horizon": 0,
+      "stage": "lateral_movement",
+      "feature_set": "flow+packet",
+      "f1": "n too small",
+      "support": {
+        "mean": 3.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "lstm",
+      "horizon": 0,
+      "stage": "command_and_control",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.405479,
+        "std": 0.161789
+      },
+      "support": {
+        "mean": 72.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "lstm",
+      "horizon": 1,
+      "stage": "benign",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.946662,
+        "std": 0.025694
+      },
+      "support": {
+        "mean": 1560.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "lstm",
+      "horizon": 1,
+      "stage": "initial_access",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 65.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "lstm",
+      "horizon": 1,
+      "stage": "lateral_movement",
+      "feature_set": "flow+packet",
+      "f1": "n too small",
+      "support": {
+        "mean": 3.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "lstm",
+      "horizon": 1,
+      "stage": "command_and_control",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.606162,
+        "std": 0.016599
+      },
+      "support": {
+        "mean": 71.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "lstm",
+      "horizon": 3,
+      "stage": "benign",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.954604,
+        "std": 0.019257
+      },
+      "support": {
+        "mean": 1564.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "lstm",
+      "horizon": 3,
+      "stage": "initial_access",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 63.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "lstm",
+      "horizon": 3,
+      "stage": "lateral_movement",
+      "feature_set": "flow+packet",
+      "f1": "n too small",
+      "support": {
+        "mean": 3.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "lstm",
+      "horizon": 3,
+      "stage": "command_and_control",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.600197,
+        "std": 0.012241
+      },
+      "support": {
+        "mean": 69.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "lstm",
+      "horizon": 5,
+      "stage": "benign",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.952274,
+        "std": 0.017513
+      },
+      "support": {
+        "mean": 1568.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "lstm",
+      "horizon": 5,
+      "stage": "initial_access",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "support": {
+        "mean": 61.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "lstm",
+      "horizon": 5,
+      "stage": "lateral_movement",
+      "feature_set": "flow+packet",
+      "f1": "n too small",
+      "support": {
+        "mean": 3.0,
+        "std": 0.0
+      }
+    },
+    {
+      "model": "lstm",
+      "horizon": 5,
+      "stage": "command_and_control",
+      "feature_set": "flow+packet",
+      "f1": {
+        "mean": 0.589434,
+        "std": 0.011042
+      },
+      "support": {
+        "mean": 67.0,
+        "std": 0.0
+      }
+    }
+  ],
+  "cross_day": [
+    {
+      "train_day": "2018-02-28",
+      "test_day": "2018-03-01",
+      "model": "logistic_window",
+      "precision": {
+        "mean": 0.395122,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.653226,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.236641,
+        "std": 0.0
+      },
+      "lateral_movement_f1": {
+        "mean": 0.492401,
+        "std": 0.0
+      }
+    },
+    {
+      "train_day": "2018-02-28",
+      "test_day": "2018-03-01",
+      "model": "logistic_flat10",
+      "precision": {
+        "mean": 0.344615,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.903226,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.406489,
+        "std": 0.0
+      },
+      "lateral_movement_f1": {
+        "mean": 0.498886,
+        "std": 0.0
+      }
+    },
+    {
+      "train_day": "2018-02-28",
+      "test_day": "2018-03-01",
+      "model": "lstm",
+      "precision": {
+        "mean": 0.226781,
+        "std": 0.003083
+      },
+      "recall": {
+        "mean": 0.998387,
+        "std": 0.003607
+      },
+      "fpr": {
+        "mean": 0.805725,
+        "std": 0.016604
+      },
+      "lateral_movement_f1": {
+        "mean": 0.371133,
+        "std": 0.003244
+      }
+    },
+    {
+      "train_day": "2018-03-01",
+      "test_day": "2018-02-28",
+      "model": "logistic_window",
+      "precision": {
+        "mean": 0.421687,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.59322,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.163265,
+        "std": 0.0
+      },
+      "lateral_movement_f1": {
+        "mean": 0.492958,
+        "std": 0.0
+      }
+    },
+    {
+      "train_day": "2018-03-01",
+      "test_day": "2018-02-28",
+      "model": "logistic_flat10",
+      "precision": {
+        "mean": 0.759259,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 0.347458,
+        "std": 0.0
+      },
+      "fpr": {
+        "mean": 0.022109,
+        "std": 0.0
+      },
+      "lateral_movement_f1": {
+        "mean": 0.476744,
+        "std": 0.0
+      }
+    },
+    {
+      "train_day": "2018-03-01",
+      "test_day": "2018-02-28",
+      "model": "lstm",
+      "precision": {
+        "mean": 0.231177,
+        "std": 0.025846
+      },
+      "recall": {
+        "mean": 0.998305,
+        "std": 0.00379
+      },
+      "fpr": {
+        "mean": 0.67415,
+        "std": 0.087346
+      },
+      "lateral_movement_f1": {
+        "mean": 0.374819,
+        "std": 0.032837
+      }
+    }
+  ],
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "window_s": 60,
+  "counts": {
+    "flows": 20115529,
+    "windows": 6533,
+    "dropped_windows": 261,
+    "out_of_order_fraction": 4.971283875819715e-08,
+    "attack_counts": [
+      [
+        "Benign",
+        17514626
+      ],
+      [
+        "DDOS_attack-HOIC",
+        1032311
+      ],
+      [
+        "FTP-BruteForce",
+        386720
+      ],
+      [
+        "DDoS_attacks-LOIC-HTTP",
+        288589
+      ],
+      [
+        "Bot",
+        207703
+      ],
+      [
+        "SSH-Bruteforce",
+        188474
+      ],
+      [
+        "Infilteration",
+        188152
+      ],
+      [
+        "DoS_attacks-SlowHTTPTest",
+        105550
+      ],
+      [
+        "DoS_attacks-Hulk",
+        100076
+      ],
+      [
+        "DoS_attacks-GoldenEye",
+        61300
+      ],
+      [
+        "DoS_attacks-Slowloris",
+        36040
+      ],
+      [
+        "DDOS_attack-LOIC-UDP",
+        3450
+      ],
+      [
+        "Brute_Force_-Web",
+        1618
+      ],
+      [
+        "Brute_Force_-XSS",
+        480
+      ],
+      [
+        "SQL_Injection",
+        440
+      ]
+    ],
+    "windows_by_day_stage": {
+      "2018-02-14|benign": 502,
+      "2018-02-14|initial_access": 190,
+      "2018-02-15|benign": 590,
+      "2018-02-15|dropped": 61,
+      "2018-02-16|benign": 494,
+      "2018-02-16|dropped": 68,
+      "2018-02-20|benign": 546,
+      "2018-02-20|dropped": 64,
+      "2018-02-21|benign": 625,
+      "2018-02-21|dropped": 68,
+      "2018-02-22|benign": 639,
+      "2018-02-23|benign": 640,
+      "2018-02-27|benign": 94,
+      "2018-02-28|benign": 714,
+      "2018-02-28|lateral_movement": 120,
+      "2018-03-01|benign": 555,
+      "2018-03-01|lateral_movement": 124,
+      "2018-03-02|benign": 120,
+      "2018-03-02|command_and_control": 319
+    },
+    "flow_onset_not_in_main_table": [
+      {
+        "model": "logistic_window",
+        "feature_set": "flow",
+        "precision": {
+          "mean": 0.035354,
+          "std": 0.0
+        },
+        "recall": {
+          "mean": 0.466667,
+          "std": 0.0
+        },
+        "fpr": {
+          "mean": 0.123785,
+          "std": 0.0
+        },
+        "lead_windows": {
+          "mean": 1.285714,
+          "std": 0.0
+        },
+        "n": {
+          "mean": 1558.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "logistic_flat10",
+        "feature_set": "flow",
+        "precision": {
+          "mean": 0.03871,
+          "std": 0.0
+        },
+        "recall": {
+          "mean": 0.4,
+          "std": 0.0
+        },
+        "fpr": {
+          "mean": 0.096565,
+          "std": 0.0
+        },
+        "lead_windows": {
+          "mean": -0.666667,
+          "std": 0.0
+        },
+        "n": {
+          "mean": 1558.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "persistence",
+        "feature_set": "flow",
+        "precision": {
+          "mean": 0.028571,
+          "std": 0.0
+        },
+        "recall": {
+          "mean": 0.266667,
+          "std": 0.0
+        },
+        "fpr": {
+          "mean": 0.08814,
+          "std": 0.0
+        },
+        "lead_windows": {
+          "mean": 2.0,
+          "std": 0.0
+        },
+        "n": {
+          "mean": 1558.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "oracle_persistence_unattainable",
+        "feature_set": "flow",
+        "precision": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "recall": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "fpr": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "lead_windows": {
+          "mean": null,
+          "std": null
+        },
+        "n": {
+          "mean": 1558.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "lstm",
+        "feature_set": "flow",
+        "precision": {
+          "mean": 0.015892,
+          "std": 0.021994
+        },
+        "recall": {
+          "mean": 0.133333,
+          "std": 0.182574
+        },
+        "fpr": {
+          "mean": 0.070901,
+          "std": 0.01282
+        },
+        "lead_windows": {
+          "mean": 2.0,
+          "std": 0.0
+        },
+        "n": {
+          "mean": 1558.0,
+          "std": 0.0
+        }
+      }
+    ],
+    "flow_per_stage_not_in_main_table": [
+      {
+        "model": "logistic_window",
+        "horizon": 0,
+        "stage": "benign",
+        "feature_set": "flow",
+        "f1": {
+          "mean": 0.951997,
+          "std": 0.0
+        },
+        "support": {
+          "mean": 1558.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "logistic_window",
+        "horizon": 0,
+        "stage": "initial_access",
+        "feature_set": "flow",
+        "f1": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "support": {
+          "mean": 66.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "logistic_window",
+        "horizon": 0,
+        "stage": "lateral_movement",
+        "feature_set": "flow",
+        "f1": "n too small",
+        "support": {
+          "mean": 3.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "logistic_window",
+        "horizon": 0,
+        "stage": "command_and_control",
+        "feature_set": "flow",
+        "f1": {
+          "mean": 0.544747,
+          "std": 0.0
+        },
+        "support": {
+          "mean": 72.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "logistic_window",
+        "horizon": 1,
+        "stage": "benign",
+        "feature_set": "flow",
+        "f1": {
+          "mean": 0.943843,
+          "std": 0.0
+        },
+        "support": {
+          "mean": 1560.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "logistic_window",
+        "horizon": 1,
+        "stage": "initial_access",
+        "feature_set": "flow",
+        "f1": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "support": {
+          "mean": 65.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "logistic_window",
+        "horizon": 1,
+        "stage": "lateral_movement",
+        "feature_set": "flow",
+        "f1": "n too small",
+        "support": {
+          "mean": 3.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "logistic_window",
+        "horizon": 1,
+        "stage": "command_and_control",
+        "feature_set": "flow",
+        "f1": {
+          "mean": 0.556452,
+          "std": 0.0
+        },
+        "support": {
+          "mean": 71.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "logistic_window",
+        "horizon": 3,
+        "stage": "benign",
+        "feature_set": "flow",
+        "f1": {
+          "mean": 0.95005,
+          "std": 0.0
+        },
+        "support": {
+          "mean": 1564.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "logistic_window",
+        "horizon": 3,
+        "stage": "initial_access",
+        "feature_set": "flow",
+        "f1": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "support": {
+          "mean": 63.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "logistic_window",
+        "horizon": 3,
+        "stage": "lateral_movement",
+        "feature_set": "flow",
+        "f1": "n too small",
+        "support": {
+          "mean": 3.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "logistic_window",
+        "horizon": 3,
+        "stage": "command_and_control",
+        "feature_set": "flow",
+        "f1": {
+          "mean": 0.546939,
+          "std": 0.0
+        },
+        "support": {
+          "mean": 69.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "logistic_window",
+        "horizon": 5,
+        "stage": "benign",
+        "feature_set": "flow",
+        "f1": {
+          "mean": 0.933424,
+          "std": 0.0
+        },
+        "support": {
+          "mean": 1568.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "logistic_window",
+        "horizon": 5,
+        "stage": "initial_access",
+        "feature_set": "flow",
+        "f1": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "support": {
+          "mean": 61.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "logistic_window",
+        "horizon": 5,
+        "stage": "lateral_movement",
+        "feature_set": "flow",
+        "f1": "n too small",
+        "support": {
+          "mean": 3.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "logistic_window",
+        "horizon": 5,
+        "stage": "command_and_control",
+        "feature_set": "flow",
+        "f1": {
+          "mean": 0.534979,
+          "std": 0.0
+        },
+        "support": {
+          "mean": 67.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "logistic_flat10",
+        "horizon": 0,
+        "stage": "benign",
+        "feature_set": "flow",
+        "f1": {
+          "mean": 0.978737,
+          "std": 0.0
+        },
+        "support": {
+          "mean": 1558.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "logistic_flat10",
+        "horizon": 0,
+        "stage": "initial_access",
+        "feature_set": "flow",
+        "f1": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "support": {
+          "mean": 66.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "logistic_flat10",
+        "horizon": 0,
+        "stage": "lateral_movement",
+        "feature_set": "flow",
+        "f1": "n too small",
+        "support": {
+          "mean": 3.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "logistic_flat10",
+        "horizon": 0,
+        "stage": "command_and_control",
+        "feature_set": "flow",
+        "f1": {
+          "mean": 0.607595,
+          "std": 0.0
+        },
+        "support": {
+          "mean": 72.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "logistic_flat10",
+        "horizon": 1,
+        "stage": "benign",
+        "feature_set": "flow",
+        "f1": {
+          "mean": 0.976759,
+          "std": 0.0
+        },
+        "support": {
+          "mean": 1560.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "logistic_flat10",
+        "horizon": 1,
+        "stage": "initial_access",
+        "feature_set": "flow",
+        "f1": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "support": {
+          "mean": 65.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "logistic_flat10",
+        "horizon": 1,
+        "stage": "lateral_movement",
+        "feature_set": "flow",
+        "f1": "n too small",
+        "support": {
+          "mean": 3.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "logistic_flat10",
+        "horizon": 1,
+        "stage": "command_and_control",
+        "feature_set": "flow",
+        "f1": {
+          "mean": 0.601695,
+          "std": 0.0
+        },
+        "support": {
+          "mean": 71.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "logistic_flat10",
+        "horizon": 3,
+        "stage": "benign",
+        "feature_set": "flow",
+        "f1": {
+          "mean": 0.97111,
+          "std": 0.0
+        },
+        "support": {
+          "mean": 1564.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "logistic_flat10",
+        "horizon": 3,
+        "stage": "initial_access",
+        "feature_set": "flow",
+        "f1": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "support": {
+          "mean": 63.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "logistic_flat10",
+        "horizon": 3,
+        "stage": "lateral_movement",
+        "feature_set": "flow",
+        "f1": "n too small",
+        "support": {
+          "mean": 3.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "logistic_flat10",
+        "horizon": 3,
+        "stage": "command_and_control",
+        "feature_set": "flow",
+        "f1": {
+          "mean": 0.592275,
+          "std": 0.0
+        },
+        "support": {
+          "mean": 69.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "logistic_flat10",
+        "horizon": 5,
+        "stage": "benign",
+        "feature_set": "flow",
+        "f1": {
+          "mean": 0.965404,
+          "std": 0.0
+        },
+        "support": {
+          "mean": 1568.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "logistic_flat10",
+        "horizon": 5,
+        "stage": "initial_access",
+        "feature_set": "flow",
+        "f1": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "support": {
+          "mean": 61.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "logistic_flat10",
+        "horizon": 5,
+        "stage": "lateral_movement",
+        "feature_set": "flow",
+        "f1": "n too small",
+        "support": {
+          "mean": 3.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "logistic_flat10",
+        "horizon": 5,
+        "stage": "command_and_control",
+        "feature_set": "flow",
+        "f1": {
+          "mean": 0.560669,
+          "std": 0.0
+        },
+        "support": {
+          "mean": 67.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "persistence",
+        "horizon": 0,
+        "stage": "benign",
+        "feature_set": "flow",
+        "f1": {
+          "mean": 0.951997,
+          "std": 0.0
+        },
+        "support": {
+          "mean": 1558.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "persistence",
+        "horizon": 0,
+        "stage": "initial_access",
+        "feature_set": "flow",
+        "f1": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "support": {
+          "mean": 66.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "persistence",
+        "horizon": 0,
+        "stage": "lateral_movement",
+        "feature_set": "flow",
+        "f1": "n too small",
+        "support": {
+          "mean": 3.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "persistence",
+        "horizon": 0,
+        "stage": "command_and_control",
+        "feature_set": "flow",
+        "f1": {
+          "mean": 0.544747,
+          "std": 0.0
+        },
+        "support": {
+          "mean": 72.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "persistence",
+        "horizon": 1,
+        "stage": "benign",
+        "feature_set": "flow",
+        "f1": {
+          "mean": 0.95203,
+          "std": 0.0
+        },
+        "support": {
+          "mean": 1560.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "persistence",
+        "horizon": 1,
+        "stage": "initial_access",
+        "feature_set": "flow",
+        "f1": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "support": {
+          "mean": 65.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "persistence",
+        "horizon": 1,
+        "stage": "lateral_movement",
+        "feature_set": "flow",
+        "f1": "n too small",
+        "support": {
+          "mean": 3.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "persistence",
+        "horizon": 1,
+        "stage": "command_and_control",
+        "feature_set": "flow",
+        "f1": {
+          "mean": 0.539062,
+          "std": 0.0
+        },
+        "support": {
+          "mean": 71.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "persistence",
+        "horizon": 3,
+        "stage": "benign",
+        "feature_set": "flow",
+        "f1": {
+          "mean": 0.950084,
+          "std": 0.0
+        },
+        "support": {
+          "mean": 1564.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "persistence",
+        "horizon": 3,
+        "stage": "initial_access",
+        "feature_set": "flow",
+        "f1": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "support": {
+          "mean": 63.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "persistence",
+        "horizon": 3,
+        "stage": "lateral_movement",
+        "feature_set": "flow",
+        "f1": "n too small",
+        "support": {
+          "mean": 3.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "persistence",
+        "horizon": 3,
+        "stage": "command_and_control",
+        "feature_set": "flow",
+        "f1": {
+          "mean": 0.527559,
+          "std": 0.0
+        },
+        "support": {
+          "mean": 69.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "persistence",
+        "horizon": 5,
+        "stage": "benign",
+        "feature_set": "flow",
+        "f1": {
+          "mean": 0.949481,
+          "std": 0.0
+        },
+        "support": {
+          "mean": 1568.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "persistence",
+        "horizon": 5,
+        "stage": "initial_access",
+        "feature_set": "flow",
+        "f1": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "support": {
+          "mean": 61.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "persistence",
+        "horizon": 5,
+        "stage": "lateral_movement",
+        "feature_set": "flow",
+        "f1": "n too small",
+        "support": {
+          "mean": 3.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "persistence",
+        "horizon": 5,
+        "stage": "command_and_control",
+        "feature_set": "flow",
+        "f1": {
+          "mean": 0.515873,
+          "std": 0.0
+        },
+        "support": {
+          "mean": 67.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "oracle_persistence_unattainable",
+        "horizon": 0,
+        "stage": "benign",
+        "feature_set": "flow",
+        "f1": {
+          "mean": 1.0,
+          "std": 0.0
+        },
+        "support": {
+          "mean": 1558.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "oracle_persistence_unattainable",
+        "horizon": 0,
+        "stage": "initial_access",
+        "feature_set": "flow",
+        "f1": {
+          "mean": 1.0,
+          "std": 0.0
+        },
+        "support": {
+          "mean": 66.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "oracle_persistence_unattainable",
+        "horizon": 0,
+        "stage": "lateral_movement",
+        "feature_set": "flow",
+        "f1": "n too small",
+        "support": {
+          "mean": 3.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "oracle_persistence_unattainable",
+        "horizon": 0,
+        "stage": "command_and_control",
+        "feature_set": "flow",
+        "f1": {
+          "mean": 1.0,
+          "std": 0.0
+        },
+        "support": {
+          "mean": 72.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "oracle_persistence_unattainable",
+        "horizon": 1,
+        "stage": "benign",
+        "feature_set": "flow",
+        "f1": {
+          "mean": 0.997434,
+          "std": 0.0
+        },
+        "support": {
+          "mean": 1560.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "oracle_persistence_unattainable",
+        "horizon": 1,
+        "stage": "initial_access",
+        "feature_set": "flow",
+        "f1": {
+          "mean": 0.992366,
+          "std": 0.0
+        },
+        "support": {
+          "mean": 65.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "oracle_persistence_unattainable",
+        "horizon": 1,
+        "stage": "lateral_movement",
+        "feature_set": "flow",
+        "f1": "n too small",
+        "support": {
+          "mean": 3.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "oracle_persistence_unattainable",
+        "horizon": 1,
+        "stage": "command_and_control",
+        "feature_set": "flow",
+        "f1": {
+          "mean": 0.993007,
+          "std": 0.0
+        },
+        "support": {
+          "mean": 71.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "oracle_persistence_unattainable",
+        "horizon": 3,
+        "stage": "benign",
+        "feature_set": "flow",
+        "f1": {
+          "mean": 0.996156,
+          "std": 0.0
+        },
+        "support": {
+          "mean": 1564.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "oracle_persistence_unattainable",
+        "horizon": 3,
+        "stage": "initial_access",
+        "feature_set": "flow",
+        "f1": {
+          "mean": 0.976744,
+          "std": 0.0
+        },
+        "support": {
+          "mean": 63.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "oracle_persistence_unattainable",
+        "horizon": 3,
+        "stage": "lateral_movement",
+        "feature_set": "flow",
+        "f1": "n too small",
+        "support": {
+          "mean": 3.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "oracle_persistence_unattainable",
+        "horizon": 3,
+        "stage": "command_and_control",
+        "feature_set": "flow",
+        "f1": {
+          "mean": 0.978723,
+          "std": 0.0
+        },
+        "support": {
+          "mean": 69.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "oracle_persistence_unattainable",
+        "horizon": 5,
+        "stage": "benign",
+        "feature_set": "flow",
+        "f1": {
+          "mean": 0.994882,
+          "std": 0.0
+        },
+        "support": {
+          "mean": 1568.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "oracle_persistence_unattainable",
+        "horizon": 5,
+        "stage": "initial_access",
+        "feature_set": "flow",
+        "f1": {
+          "mean": 0.96063,
+          "std": 0.0
+        },
+        "support": {
+          "mean": 61.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "oracle_persistence_unattainable",
+        "horizon": 5,
+        "stage": "lateral_movement",
+        "feature_set": "flow",
+        "f1": "n too small",
+        "support": {
+          "mean": 3.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "oracle_persistence_unattainable",
+        "horizon": 5,
+        "stage": "command_and_control",
+        "feature_set": "flow",
+        "f1": {
+          "mean": 0.964029,
+          "std": 0.0
+        },
+        "support": {
+          "mean": 67.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "lstm",
+        "horizon": 0,
+        "stage": "benign",
+        "feature_set": "flow",
+        "f1": {
+          "mean": 0.851719,
+          "std": 0.167242
+        },
+        "support": {
+          "mean": 1558.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "lstm",
+        "horizon": 0,
+        "stage": "initial_access",
+        "feature_set": "flow",
+        "f1": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "support": {
+          "mean": 66.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "lstm",
+        "horizon": 0,
+        "stage": "lateral_movement",
+        "feature_set": "flow",
+        "f1": "n too small",
+        "support": {
+          "mean": 3.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "lstm",
+        "horizon": 0,
+        "stage": "command_and_control",
+        "feature_set": "flow",
+        "f1": {
+          "mean": 0.514144,
+          "std": 0.200527
+        },
+        "support": {
+          "mean": 72.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "lstm",
+        "horizon": 1,
+        "stage": "benign",
+        "feature_set": "flow",
+        "f1": {
+          "mean": 0.965573,
+          "std": 0.009495
+        },
+        "support": {
+          "mean": 1560.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "lstm",
+        "horizon": 1,
+        "stage": "initial_access",
+        "feature_set": "flow",
+        "f1": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "support": {
+          "mean": 65.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "lstm",
+        "horizon": 1,
+        "stage": "lateral_movement",
+        "feature_set": "flow",
+        "f1": "n too small",
+        "support": {
+          "mean": 3.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "lstm",
+        "horizon": 1,
+        "stage": "command_and_control",
+        "feature_set": "flow",
+        "f1": {
+          "mean": 0.600364,
+          "std": 0.011966
+        },
+        "support": {
+          "mean": 71.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "lstm",
+        "horizon": 3,
+        "stage": "benign",
+        "feature_set": "flow",
+        "f1": {
+          "mean": 0.966528,
+          "std": 0.006245
+        },
+        "support": {
+          "mean": 1564.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "lstm",
+        "horizon": 3,
+        "stage": "initial_access",
+        "feature_set": "flow",
+        "f1": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "support": {
+          "mean": 63.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "lstm",
+        "horizon": 3,
+        "stage": "lateral_movement",
+        "feature_set": "flow",
+        "f1": "n too small",
+        "support": {
+          "mean": 3.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "lstm",
+        "horizon": 3,
+        "stage": "command_and_control",
+        "feature_set": "flow",
+        "f1": {
+          "mean": 0.593824,
+          "std": 0.003849
+        },
+        "support": {
+          "mean": 69.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "lstm",
+        "horizon": 5,
+        "stage": "benign",
+        "feature_set": "flow",
+        "f1": {
+          "mean": 0.96441,
+          "std": 0.008523
+        },
+        "support": {
+          "mean": 1568.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "lstm",
+        "horizon": 5,
+        "stage": "initial_access",
+        "feature_set": "flow",
+        "f1": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "support": {
+          "mean": 61.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "lstm",
+        "horizon": 5,
+        "stage": "lateral_movement",
+        "feature_set": "flow",
+        "f1": "n too small",
+        "support": {
+          "mean": 3.0,
+          "std": 0.0
+        }
+      },
+      {
+        "model": "lstm",
+        "horizon": 5,
+        "stage": "command_and_control",
+        "feature_set": "flow",
+        "f1": {
+          "mean": 0.582126,
+          "std": 0.004125
+        },
+        "support": {
+          "mean": 67.0,
+          "std": 0.0
+        }
+      }
+    ]
+  }
+}

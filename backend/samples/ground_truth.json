@@ -1,0 +1,1324 @@
+{
+  "horizon_k": 5,
+  "flag_basis": "future",
+  "network_risk_definition": "highest host attack probability in the window (max over hosts of 1 - P(benign)); this is not a calibrated probability and false alarms accumulate across hosts",
+  "samples": {
+    "brute_force.csv.gz": {
+      "file": "brute_force.csv.gz",
+      "label_stage": "initial_access",
+      "labelled_attackers": [
+        {
+          "host": "13.58.98.64",
+          "stage": "initial_access",
+          "host_rows": 11,
+          "other_stages": []
+        }
+      ],
+      "current": {
+        "flagged_hosts": [],
+        "missed_attackers": [
+          {
+            "host": "13.58.98.64",
+            "stage": "initial_access",
+            "host_rows": 11,
+            "other_stages": []
+          }
+        ],
+        "stage_mismatches": [],
+        "host_precision": null,
+        "host_recall": 0.0,
+        "predicted_stages": [
+          "benign"
+        ],
+        "stage_match": false
+      },
+      "forecast": {
+        "flagged_hosts": [],
+        "missed_attackers": [
+          {
+            "host": "13.58.98.64",
+            "stage": "initial_access",
+            "host_rows": 11,
+            "other_stages": []
+          }
+        ],
+        "stage_mismatches": [],
+        "host_precision": null,
+        "host_recall": 0.0,
+        "predicted_stages": [
+          "benign"
+        ],
+        "stage_match": false
+      },
+      "overall_risk": 0.063,
+      "flag_basis": "future",
+      "network_risk_definition": "highest host attack probability in the window (max over hosts of 1 - P(benign)); this is not a calibrated probability and false alarms accumulate across hosts",
+      "windows": 16
+    },
+    "infiltration.csv.gz": {
+      "file": "infiltration.csv.gz",
+      "label_stage": "lateral_movement",
+      "labelled_attackers": [
+        {
+          "host": "103.99.0.227",
+          "stage": "lateral_movement",
+          "host_rows": 2,
+          "other_stages": []
+        },
+        {
+          "host": "172.31.69.10",
+          "stage": "lateral_movement",
+          "host_rows": 12,
+          "other_stages": []
+        },
+        {
+          "host": "172.31.69.12",
+          "stage": "lateral_movement",
+          "host_rows": 4,
+          "other_stages": []
+        },
+        {
+          "host": "172.31.69.13",
+          "stage": "lateral_movement",
+          "host_rows": 3,
+          "other_stages": []
+        },
+        {
+          "host": "172.31.69.14",
+          "stage": "lateral_movement",
+          "host_rows": 11,
+          "other_stages": []
+        },
+        {
+          "host": "172.31.69.16",
+          "stage": "lateral_movement",
+          "host_rows": 3,
+          "other_stages": []
+        },
+        {
+          "host": "172.31.69.17",
+          "stage": "lateral_movement",
+          "host_rows": 6,
+          "other_stages": []
+        },
+        {
+          "host": "172.31.69.5",
+          "stage": "lateral_movement",
+          "host_rows": 11,
+          "other_stages": []
+        },
+        {
+          "host": "172.31.69.8",
+          "stage": "lateral_movement",
+          "host_rows": 15,
+          "other_stages": []
+        },
+        {
+          "host": "172.31.69.9",
+          "stage": "lateral_movement",
+          "host_rows": 5,
+          "other_stages": []
+        },
+        {
+          "host": "178.93.125.210",
+          "stage": "lateral_movement",
+          "host_rows": 1,
+          "other_stages": []
+        },
+        {
+          "host": "190.204.224.130",
+          "stage": "lateral_movement",
+          "host_rows": 1,
+          "other_stages": []
+        },
+        {
+          "host": "208.100.26.228",
+          "stage": "lateral_movement",
+          "host_rows": 1,
+          "other_stages": []
+        },
+        {
+          "host": "66.45.81.53",
+          "stage": "lateral_movement",
+          "host_rows": 5,
+          "other_stages": []
+        },
+        {
+          "host": "77.72.82.57",
+          "stage": "lateral_movement",
+          "host_rows": 1,
+          "other_stages": []
+        },
+        {
+          "host": "77.72.82.92",
+          "stage": "lateral_movement",
+          "host_rows": 1,
+          "other_stages": []
+        }
+      ],
+      "current": {
+        "flagged_hosts": [
+          {
+            "host": "172.31.69.10",
+            "predicted_stage": "lateral_movement",
+            "peak_attack_prob": 1.0,
+            "label_stage": "lateral_movement",
+            "stage_match": true
+          },
+          {
+            "host": "172.31.69.14",
+            "predicted_stage": "lateral_movement",
+            "peak_attack_prob": 1.0,
+            "label_stage": "lateral_movement",
+            "stage_match": true
+          },
+          {
+            "host": "172.31.69.8",
+            "predicted_stage": "lateral_movement",
+            "peak_attack_prob": 0.991,
+            "label_stage": "lateral_movement",
+            "stage_match": true
+          },
+          {
+            "host": "172.31.69.5",
+            "predicted_stage": "lateral_movement",
+            "peak_attack_prob": 0.989,
+            "label_stage": "lateral_movement",
+            "stage_match": true
+          },
+          {
+            "host": "172.31.65.44",
+            "predicted_stage": "lateral_movement",
+            "peak_attack_prob": 0.989,
+            "label_stage": null,
+            "stage_match": false
+          },
+          {
+            "host": "172.31.66.38",
+            "predicted_stage": "lateral_movement",
+            "peak_attack_prob": 0.985,
+            "label_stage": null,
+            "stage_match": false
+          },
+          {
+            "host": "66.45.81.53",
+            "predicted_stage": "lateral_movement",
+            "peak_attack_prob": 0.973,
+            "label_stage": "lateral_movement",
+            "stage_match": true
+          },
+          {
+            "host": "172.31.65.27",
+            "predicted_stage": "lateral_movement",
+            "peak_attack_prob": 0.965,
+            "label_stage": null,
+            "stage_match": false
+          },
+          {
+            "host": "172.31.69.16",
+            "predicted_stage": "lateral_movement",
+            "peak_attack_prob": 0.96,
+            "label_stage": "lateral_movement",
+            "stage_match": true
+          },
+          {
+            "host": "75.145.38.153",
+            "predicted_stage": "lateral_movement",
+            "peak_attack_prob": 0.892,
+            "label_stage": null,
+            "stage_match": false
+          },
+          {
+            "host": "172.31.65.8",
+            "predicted_stage": "lateral_movement",
+            "peak_attack_prob": 0.881,
+            "label_stage": null,
+            "stage_match": false
+          },
+          {
+            "host": "172.31.69.9",
+            "predicted_stage": "lateral_movement",
+            "peak_attack_prob": 0.826,
+            "label_stage": "lateral_movement",
+            "stage_match": true
+          },
+          {
+            "host": "172.31.64.31",
+            "predicted_stage": "lateral_movement",
+            "peak_attack_prob": 0.763,
+            "label_stage": null,
+            "stage_match": false
+          },
+          {
+            "host": "172.31.68.21",
+            "predicted_stage": "lateral_movement",
+            "peak_attack_prob": 0.693,
+            "label_stage": null,
+            "stage_match": false
+          },
+          {
+            "host": "12.110.74.110",
+            "predicted_stage": "lateral_movement",
+            "peak_attack_prob": 0.567,
+            "label_stage": null,
+            "stage_match": false
+          }
+        ],
+        "missed_attackers": [
+          {
+            "host": "103.99.0.227",
+            "stage": "lateral_movement",
+            "host_rows": 2,
+            "other_stages": []
+          },
+          {
+            "host": "172.31.69.12",
+            "stage": "lateral_movement",
+            "host_rows": 4,
+            "other_stages": []
+          },
+          {
+            "host": "172.31.69.13",
+            "stage": "lateral_movement",
+            "host_rows": 3,
+            "other_stages": []
+          },
+          {
+            "host": "172.31.69.17",
+            "stage": "lateral_movement",
+            "host_rows": 6,
+            "other_stages": []
+          },
+          {
+            "host": "178.93.125.210",
+            "stage": "lateral_movement",
+            "host_rows": 1,
+            "other_stages": []
+          },
+          {
+            "host": "190.204.224.130",
+            "stage": "lateral_movement",
+            "host_rows": 1,
+            "other_stages": []
+          },
+          {
+            "host": "208.100.26.228",
+            "stage": "lateral_movement",
+            "host_rows": 1,
+            "other_stages": []
+          },
+          {
+            "host": "77.72.82.57",
+            "stage": "lateral_movement",
+            "host_rows": 1,
+            "other_stages": []
+          },
+          {
+            "host": "77.72.82.92",
+            "stage": "lateral_movement",
+            "host_rows": 1,
+            "other_stages": []
+          }
+        ],
+        "stage_mismatches": [
+          {
+            "host": "172.31.65.44",
+            "predicted_stage": "lateral_movement",
+            "peak_attack_prob": 0.989,
+            "label_stage": null,
+            "stage_match": false
+          },
+          {
+            "host": "172.31.66.38",
+            "predicted_stage": "lateral_movement",
+            "peak_attack_prob": 0.985,
+            "label_stage": null,
+            "stage_match": false
+          },
+          {
+            "host": "172.31.65.27",
+            "predicted_stage": "lateral_movement",
+            "peak_attack_prob": 0.965,
+            "label_stage": null,
+            "stage_match": false
+          },
+          {
+            "host": "75.145.38.153",
+            "predicted_stage": "lateral_movement",
+            "peak_attack_prob": 0.892,
+            "label_stage": null,
+            "stage_match": false
+          },
+          {
+            "host": "172.31.65.8",
+            "predicted_stage": "lateral_movement",
+            "peak_attack_prob": 0.881,
+            "label_stage": null,
+            "stage_match": false
+          },
+          {
+            "host": "172.31.64.31",
+            "predicted_stage": "lateral_movement",
+            "peak_attack_prob": 0.763,
+            "label_stage": null,
+            "stage_match": false
+          },
+          {
+            "host": "172.31.68.21",
+            "predicted_stage": "lateral_movement",
+            "peak_attack_prob": 0.693,
+            "label_stage": null,
+            "stage_match": false
+          },
+          {
+            "host": "12.110.74.110",
+            "predicted_stage": "lateral_movement",
+            "peak_attack_prob": 0.567,
+            "label_stage": null,
+            "stage_match": false
+          }
+        ],
+        "host_precision": 0.4667,
+        "host_recall": 0.4375,
+        "predicted_stages": [
+          "lateral_movement"
+        ],
+        "stage_match": false
+      },
+      "forecast": {
+        "flagged_hosts": [
+          {
+            "host": "172.31.69.10",
+            "predicted_stage": "lateral_movement",
+            "peak_attack_prob": 0.999,
+            "label_stage": "lateral_movement",
+            "stage_match": true
+          },
+          {
+            "host": "172.31.69.14",
+            "predicted_stage": "lateral_movement",
+            "peak_attack_prob": 0.994,
+            "label_stage": "lateral_movement",
+            "stage_match": true
+          },
+          {
+            "host": "172.31.69.5",
+            "predicted_stage": "lateral_movement",
+            "peak_attack_prob": 0.977,
+            "label_stage": "lateral_movement",
+            "stage_match": true
+          },
+          {
+            "host": "172.31.66.38",
+            "predicted_stage": "lateral_movement",
+            "peak_attack_prob": 0.954,
+            "label_stage": null,
+            "stage_match": false
+          },
+          {
+            "host": "172.31.69.8",
+            "predicted_stage": "lateral_movement",
+            "peak_attack_prob": 0.938,
+            "label_stage": "lateral_movement",
+            "stage_match": true
+          },
+          {
+            "host": "172.31.65.44",
+            "predicted_stage": "lateral_movement",
+            "peak_attack_prob": 0.699,
+            "label_stage": null,
+            "stage_match": false
+          },
+          {
+            "host": "75.145.38.153",
+            "predicted_stage": "lateral_movement",
+            "peak_attack_prob": 0.594,
+            "label_stage": null,
+            "stage_match": false
+          }
+        ],
+        "missed_attackers": [
+          {
+            "host": "103.99.0.227",
+            "stage": "lateral_movement",
+            "host_rows": 2,
+            "other_stages": []
+          },
+          {
+            "host": "172.31.69.12",
+            "stage": "lateral_movement",
+            "host_rows": 4,
+            "other_stages": []
+          },
+          {
+            "host": "172.31.69.13",
+            "stage": "lateral_movement",
+            "host_rows": 3,
+            "other_stages": []
+          },
+          {
+            "host": "172.31.69.16",
+            "stage": "lateral_movement",
+            "host_rows": 3,
+            "other_stages": []
+          },
+          {
+            "host": "172.31.69.17",
+            "stage": "lateral_movement",
+            "host_rows": 6,
+            "other_stages": []
+          },
+          {
+            "host": "172.31.69.9",
+            "stage": "lateral_movement",
+            "host_rows": 5,
+            "other_stages": []
+          },
+          {
+            "host": "178.93.125.210",
+            "stage": "lateral_movement",
+            "host_rows": 1,
+            "other_stages": []
+          },
+          {
+            "host": "190.204.224.130",
+            "stage": "lateral_movement",
+            "host_rows": 1,
+            "other_stages": []
+          },
+          {
+            "host": "208.100.26.228",
+            "stage": "lateral_movement",
+            "host_rows": 1,
+            "other_stages": []
+          },
+          {
+            "host": "66.45.81.53",
+            "stage": "lateral_movement",
+            "host_rows": 5,
+            "other_stages": []
+          },
+          {
+            "host": "77.72.82.57",
+            "stage": "lateral_movement",
+            "host_rows": 1,
+            "other_stages": []
+          },
+          {
+            "host": "77.72.82.92",
+            "stage": "lateral_movement",
+            "host_rows": 1,
+            "other_stages": []
+          }
+        ],
+        "stage_mismatches": [
+          {
+            "host": "172.31.66.38",
+            "predicted_stage": "lateral_movement",
+            "peak_attack_prob": 0.954,
+            "label_stage": null,
+            "stage_match": false
+          },
+          {
+            "host": "172.31.65.44",
+            "predicted_stage": "lateral_movement",
+            "peak_attack_prob": 0.699,
+            "label_stage": null,
+            "stage_match": false
+          },
+          {
+            "host": "75.145.38.153",
+            "predicted_stage": "lateral_movement",
+            "peak_attack_prob": 0.594,
+            "label_stage": null,
+            "stage_match": false
+          }
+        ],
+        "host_precision": 0.5714,
+        "host_recall": 0.25,
+        "predicted_stages": [
+          "lateral_movement"
+        ],
+        "stage_match": false
+      },
+      "overall_risk": 0.999,
+      "flag_basis": "future",
+      "network_risk_definition": "highest host attack probability in the window (max over hosts of 1 - P(benign)); this is not a calibrated probability and false alarms accumulate across hosts",
+      "windows": 16
+    },
+    "bot.csv.gz": {
+      "file": "bot.csv.gz",
+      "label_stage": "command_and_control",
+      "labelled_attackers": [
+        {
+          "host": "172.31.69.10",
+          "stage": "command_and_control",
+          "host_rows": 16,
+          "other_stages": []
+        },
+        {
+          "host": "172.31.69.14",
+          "stage": "command_and_control",
+          "host_rows": 16,
+          "other_stages": []
+        },
+        {
+          "host": "172.31.69.17",
+          "stage": "command_and_control",
+          "host_rows": 16,
+          "other_stages": []
+        },
+        {
+          "host": "172.31.69.23",
+          "stage": "command_and_control",
+          "host_rows": 16,
+          "other_stages": []
+        },
+        {
+          "host": "172.31.69.26",
+          "stage": "command_and_control",
+          "host_rows": 16,
+          "other_stages": []
+        },
+        {
+          "host": "172.31.69.29",
+          "stage": "command_and_control",
+          "host_rows": 16,
+          "other_stages": []
+        },
+        {
+          "host": "172.31.69.8",
+          "stage": "command_and_control",
+          "host_rows": 16,
+          "other_stages": []
+        }
+      ],
+      "current": {
+        "flagged_hosts": [
+          {
+            "host": "172.31.69.29",
+            "predicted_stage": "command_and_control",
+            "peak_attack_prob": 1.0,
+            "label_stage": "command_and_control",
+            "stage_match": true
+          },
+          {
+            "host": "172.31.69.26",
+            "predicted_stage": "command_and_control",
+            "peak_attack_prob": 1.0,
+            "label_stage": "command_and_control",
+            "stage_match": true
+          },
+          {
+            "host": "172.31.69.8",
+            "predicted_stage": "command_and_control",
+            "peak_attack_prob": 1.0,
+            "label_stage": "command_and_control",
+            "stage_match": true
+          },
+          {
+            "host": "172.31.69.14",
+            "predicted_stage": "command_and_control",
+            "peak_attack_prob": 1.0,
+            "label_stage": "command_and_control",
+            "stage_match": true
+          },
+          {
+            "host": "172.31.69.17",
+            "predicted_stage": "command_and_control",
+            "peak_attack_prob": 1.0,
+            "label_stage": "command_and_control",
+            "stage_match": true
+          },
+          {
+            "host": "172.31.69.10",
+            "predicted_stage": "command_and_control",
+            "peak_attack_prob": 1.0,
+            "label_stage": "command_and_control",
+            "stage_match": true
+          },
+          {
+            "host": "172.31.69.23",
+            "predicted_stage": "command_and_control",
+            "peak_attack_prob": 0.999,
+            "label_stage": "command_and_control",
+            "stage_match": true
+          },
+          {
+            "host": "172.31.69.13",
+            "predicted_stage": "lateral_movement",
+            "peak_attack_prob": 0.999,
+            "label_stage": null,
+            "stage_match": false
+          },
+          {
+            "host": "172.31.69.16",
+            "predicted_stage": "lateral_movement",
+            "peak_attack_prob": 0.997,
+            "label_stage": null,
+            "stage_match": false
+          },
+          {
+            "host": "172.31.69.9",
+            "predicted_stage": "lateral_movement",
+            "peak_attack_prob": 0.962,
+            "label_stage": null,
+            "stage_match": false
+          },
+          {
+            "host": "199.27.255.123",
+            "predicted_stage": "lateral_movement",
+            "peak_attack_prob": 0.777,
+            "label_stage": null,
+            "stage_match": false
+          },
+          {
+            "host": "141.212.106.202",
+            "predicted_stage": "lateral_movement",
+            "peak_attack_prob": 0.618,
+            "label_stage": null,
+            "stage_match": false
+          },
+          {
+            "host": "172.31.68.23",
+            "predicted_stage": "lateral_movement",
+            "peak_attack_prob": 0.579,
+            "label_stage": null,
+            "stage_match": false
+          }
+        ],
+        "missed_attackers": [],
+        "stage_mismatches": [
+          {
+            "host": "172.31.69.13",
+            "predicted_stage": "lateral_movement",
+            "peak_attack_prob": 0.999,
+            "label_stage": null,
+            "stage_match": false
+          },
+          {
+            "host": "172.31.69.16",
+            "predicted_stage": "lateral_movement",
+            "peak_attack_prob": 0.997,
+            "label_stage": null,
+            "stage_match": false
+          },
+          {
+            "host": "172.31.69.9",
+            "predicted_stage": "lateral_movement",
+            "peak_attack_prob": 0.962,
+            "label_stage": null,
+            "stage_match": false
+          },
+          {
+            "host": "199.27.255.123",
+            "predicted_stage": "lateral_movement",
+            "peak_attack_prob": 0.777,
+            "label_stage": null,
+            "stage_match": false
+          },
+          {
+            "host": "141.212.106.202",
+            "predicted_stage": "lateral_movement",
+            "peak_attack_prob": 0.618,
+            "label_stage": null,
+            "stage_match": false
+          },
+          {
+            "host": "172.31.68.23",
+            "predicted_stage": "lateral_movement",
+            "peak_attack_prob": 0.579,
+            "label_stage": null,
+            "stage_match": false
+          }
+        ],
+        "host_precision": 0.5385,
+        "host_recall": 1.0,
+        "predicted_stages": [
+          "command_and_control",
+          "lateral_movement"
+        ],
+        "stage_match": false
+      },
+      "forecast": {
+        "flagged_hosts": [
+          {
+            "host": "172.31.69.26",
+            "predicted_stage": "command_and_control",
+            "peak_attack_prob": 1.0,
+            "label_stage": "command_and_control",
+            "stage_match": true
+          },
+          {
+            "host": "172.31.69.29",
+            "predicted_stage": "command_and_control",
+            "peak_attack_prob": 1.0,
+            "label_stage": "command_and_control",
+            "stage_match": true
+          },
+          {
+            "host": "172.31.69.8",
+            "predicted_stage": "command_and_control",
+            "peak_attack_prob": 1.0,
+            "label_stage": "command_and_control",
+            "stage_match": true
+          },
+          {
+            "host": "172.31.69.14",
+            "predicted_stage": "command_and_control",
+            "peak_attack_prob": 1.0,
+            "label_stage": "command_and_control",
+            "stage_match": true
+          },
+          {
+            "host": "172.31.69.17",
+            "predicted_stage": "command_and_control",
+            "peak_attack_prob": 1.0,
+            "label_stage": "command_and_control",
+            "stage_match": true
+          },
+          {
+            "host": "172.31.69.10",
+            "predicted_stage": "command_and_control",
+            "peak_attack_prob": 1.0,
+            "label_stage": "command_and_control",
+            "stage_match": true
+          },
+          {
+            "host": "172.31.69.23",
+            "predicted_stage": "command_and_control",
+            "peak_attack_prob": 1.0,
+            "label_stage": "command_and_control",
+            "stage_match": true
+          },
+          {
+            "host": "172.31.69.13",
+            "predicted_stage": "lateral_movement",
+            "peak_attack_prob": 0.976,
+            "label_stage": null,
+            "stage_match": false
+          }
+        ],
+        "missed_attackers": [],
+        "stage_mismatches": [
+          {
+            "host": "172.31.69.13",
+            "predicted_stage": "lateral_movement",
+            "peak_attack_prob": 0.976,
+            "label_stage": null,
+            "stage_match": false
+          }
+        ],
+        "host_precision": 0.875,
+        "host_recall": 1.0,
+        "predicted_stages": [
+          "command_and_control",
+          "lateral_movement"
+        ],
+        "stage_match": false
+      },
+      "overall_risk": 1.0,
+      "flag_basis": "future",
+      "network_risk_definition": "highest host attack probability in the window (max over hosts of 1 - P(benign)); this is not a calibrated probability and false alarms accumulate across hosts",
+      "windows": 16
+    },
+    "benign.csv.gz": {
+      "file": "benign.csv.gz",
+      "label_stage": "benign",
+      "labelled_attackers": [],
+      "current": {
+        "flagged_hosts": [],
+        "missed_attackers": [],
+        "stage_mismatches": [],
+        "host_precision": null,
+        "host_recall": null,
+        "predicted_stages": [
+          "benign"
+        ],
+        "stage_match": true
+      },
+      "forecast": {
+        "flagged_hosts": [],
+        "missed_attackers": [],
+        "stage_mismatches": [],
+        "host_precision": null,
+        "host_recall": null,
+        "predicted_stages": [
+          "benign"
+        ],
+        "stage_match": true
+      },
+      "overall_risk": 0.001,
+      "flag_basis": "future",
+      "network_risk_definition": "highest host attack probability in the window (max over hosts of 1 - P(benign)); this is not a calibrated probability and false alarms accumulate across hosts",
+      "windows": 16
+    },
+    "kill_chain_replay.csv.gz": {
+      "file": "kill_chain_replay.csv.gz",
+      "label_stage": null,
+      "labelled_attackers": [
+        {
+          "host": "103.99.0.227",
+          "stage": "lateral_movement",
+          "host_rows": 2,
+          "other_stages": []
+        },
+        {
+          "host": "13.58.98.64",
+          "stage": "initial_access",
+          "host_rows": 11,
+          "other_stages": []
+        },
+        {
+          "host": "172.31.69.10",
+          "stage": "command_and_control",
+          "host_rows": 28,
+          "other_stages": [
+            "lateral_movement"
+          ]
+        },
+        {
+          "host": "172.31.69.12",
+          "stage": "lateral_movement",
+          "host_rows": 4,
+          "other_stages": []
+        },
+        {
+          "host": "172.31.69.13",
+          "stage": "lateral_movement",
+          "host_rows": 3,
+          "other_stages": []
+        },
+        {
+          "host": "172.31.69.14",
+          "stage": "command_and_control",
+          "host_rows": 27,
+          "other_stages": [
+            "lateral_movement"
+          ]
+        },
+        {
+          "host": "172.31.69.16",
+          "stage": "lateral_movement",
+          "host_rows": 3,
+          "other_stages": []
+        },
+        {
+          "host": "172.31.69.17",
+          "stage": "command_and_control",
+          "host_rows": 22,
+          "other_stages": [
+            "lateral_movement"
+          ]
+        },
+        {
+          "host": "172.31.69.23",
+          "stage": "command_and_control",
+          "host_rows": 16,
+          "other_stages": []
+        },
+        {
+          "host": "172.31.69.26",
+          "stage": "command_and_control",
+          "host_rows": 16,
+          "other_stages": []
+        },
+        {
+          "host": "172.31.69.29",
+          "stage": "command_and_control",
+          "host_rows": 16,
+          "other_stages": []
+        },
+        {
+          "host": "172.31.69.5",
+          "stage": "lateral_movement",
+          "host_rows": 11,
+          "other_stages": []
+        },
+        {
+          "host": "172.31.69.8",
+          "stage": "command_and_control",
+          "host_rows": 31,
+          "other_stages": [
+            "lateral_movement"
+          ]
+        },
+        {
+          "host": "172.31.69.9",
+          "stage": "lateral_movement",
+          "host_rows": 5,
+          "other_stages": []
+        },
+        {
+          "host": "178.93.125.210",
+          "stage": "lateral_movement",
+          "host_rows": 1,
+          "other_stages": []
+        },
+        {
+          "host": "190.204.224.130",
+          "stage": "lateral_movement",
+          "host_rows": 1,
+          "other_stages": []
+        },
+        {
+          "host": "208.100.26.228",
+          "stage": "lateral_movement",
+          "host_rows": 1,
+          "other_stages": []
+        },
+        {
+          "host": "66.45.81.53",
+          "stage": "lateral_movement",
+          "host_rows": 5,
+          "other_stages": []
+        },
+        {
+          "host": "77.72.82.57",
+          "stage": "lateral_movement",
+          "host_rows": 1,
+          "other_stages": []
+        },
+        {
+          "host": "77.72.82.92",
+          "stage": "lateral_movement",
+          "host_rows": 1,
+          "other_stages": []
+        }
+      ],
+      "current": {
+        "flagged_hosts": [
+          {
+            "host": "172.31.69.29",
+            "predicted_stage": "command_and_control",
+            "peak_attack_prob": 1.0,
+            "label_stage": "command_and_control",
+            "stage_match": true
+          },
+          {
+            "host": "172.31.69.26",
+            "predicted_stage": "command_and_control",
+            "peak_attack_prob": 1.0,
+            "label_stage": "command_and_control",
+            "stage_match": true
+          },
+          {
+            "host": "172.31.69.8",
+            "predicted_stage": "command_and_control",
+            "peak_attack_prob": 1.0,
+            "label_stage": "command_and_control",
+            "stage_match": true
+          },
+          {
+            "host": "172.31.69.14",
+            "predicted_stage": "command_and_control",
+            "peak_attack_prob": 1.0,
+            "label_stage": "command_and_control",
+            "stage_match": true
+          },
+          {
+            "host": "172.31.69.17",
+            "predicted_stage": "command_and_control",
+            "peak_attack_prob": 1.0,
+            "label_stage": "command_and_control",
+            "stage_match": true
+          },
+          {
+            "host": "172.31.69.10",
+            "predicted_stage": "command_and_control",
+            "peak_attack_prob": 1.0,
+            "label_stage": "command_and_control",
+            "stage_match": true
+          },
+          {
+            "host": "172.31.69.23",
+            "predicted_stage": "command_and_control",
+            "peak_attack_prob": 0.999,
+            "label_stage": "command_and_control",
+            "stage_match": true
+          },
+          {
+            "host": "172.31.69.13",
+            "predicted_stage": "lateral_movement",
+            "peak_attack_prob": 0.999,
+            "label_stage": "lateral_movement",
+            "stage_match": true
+          },
+          {
+            "host": "172.31.69.16",
+            "predicted_stage": "lateral_movement",
+            "peak_attack_prob": 0.997,
+            "label_stage": "lateral_movement",
+            "stage_match": true
+          },
+          {
+            "host": "172.31.69.9",
+            "predicted_stage": "lateral_movement",
+            "peak_attack_prob": 0.962,
+            "label_stage": "lateral_movement",
+            "stage_match": true
+          },
+          {
+            "host": "199.27.255.123",
+            "predicted_stage": "lateral_movement",
+            "peak_attack_prob": 0.777,
+            "label_stage": null,
+            "stage_match": false
+          },
+          {
+            "host": "141.212.106.202",
+            "predicted_stage": "lateral_movement",
+            "peak_attack_prob": 0.618,
+            "label_stage": null,
+            "stage_match": false
+          },
+          {
+            "host": "172.31.68.23",
+            "predicted_stage": "lateral_movement",
+            "peak_attack_prob": 0.579,
+            "label_stage": null,
+            "stage_match": false
+          }
+        ],
+        "missed_attackers": [
+          {
+            "host": "103.99.0.227",
+            "stage": "lateral_movement",
+            "host_rows": 2,
+            "other_stages": []
+          },
+          {
+            "host": "13.58.98.64",
+            "stage": "initial_access",
+            "host_rows": 11,
+            "other_stages": []
+          },
+          {
+            "host": "172.31.69.12",
+            "stage": "lateral_movement",
+            "host_rows": 4,
+            "other_stages": []
+          },
+          {
+            "host": "172.31.69.5",
+            "stage": "lateral_movement",
+            "host_rows": 11,
+            "other_stages": []
+          },
+          {
+            "host": "178.93.125.210",
+            "stage": "lateral_movement",
+            "host_rows": 1,
+            "other_stages": []
+          },
+          {
+            "host": "190.204.224.130",
+            "stage": "lateral_movement",
+            "host_rows": 1,
+            "other_stages": []
+          },
+          {
+            "host": "208.100.26.228",
+            "stage": "lateral_movement",
+            "host_rows": 1,
+            "other_stages": []
+          },
+          {
+            "host": "66.45.81.53",
+            "stage": "lateral_movement",
+            "host_rows": 5,
+            "other_stages": []
+          },
+          {
+            "host": "77.72.82.57",
+            "stage": "lateral_movement",
+            "host_rows": 1,
+            "other_stages": []
+          },
+          {
+            "host": "77.72.82.92",
+            "stage": "lateral_movement",
+            "host_rows": 1,
+            "other_stages": []
+          }
+        ],
+        "stage_mismatches": [
+          {
+            "host": "199.27.255.123",
+            "predicted_stage": "lateral_movement",
+            "peak_attack_prob": 0.777,
+            "label_stage": null,
+            "stage_match": false
+          },
+          {
+            "host": "141.212.106.202",
+            "predicted_stage": "lateral_movement",
+            "peak_attack_prob": 0.618,
+            "label_stage": null,
+            "stage_match": false
+          },
+          {
+            "host": "172.31.68.23",
+            "predicted_stage": "lateral_movement",
+            "peak_attack_prob": 0.579,
+            "label_stage": null,
+            "stage_match": false
+          }
+        ],
+        "host_precision": 0.7692,
+        "host_recall": 0.5,
+        "predicted_stages": [
+          "command_and_control",
+          "lateral_movement"
+        ],
+        "stage_match": false
+      },
+      "forecast": {
+        "flagged_hosts": [
+          {
+            "host": "172.31.69.26",
+            "predicted_stage": "command_and_control",
+            "peak_attack_prob": 1.0,
+            "label_stage": "command_and_control",
+            "stage_match": true
+          },
+          {
+            "host": "172.31.69.29",
+            "predicted_stage": "command_and_control",
+            "peak_attack_prob": 1.0,
+            "label_stage": "command_and_control",
+            "stage_match": true
+          },
+          {
+            "host": "172.31.69.8",
+            "predicted_stage": "command_and_control",
+            "peak_attack_prob": 1.0,
+            "label_stage": "command_and_control",
+            "stage_match": true
+          },
+          {
+            "host": "172.31.69.14",
+            "predicted_stage": "command_and_control",
+            "peak_attack_prob": 1.0,
+            "label_stage": "command_and_control",
+            "stage_match": true
+          },
+          {
+            "host": "172.31.69.17",
+            "predicted_stage": "command_and_control",
+            "peak_attack_prob": 1.0,
+            "label_stage": "command_and_control",
+            "stage_match": true
+          },
+          {
+            "host": "172.31.69.10",
+            "predicted_stage": "command_and_control",
+            "peak_attack_prob": 1.0,
+            "label_stage": "command_and_control",
+            "stage_match": true
+          },
+          {
+            "host": "172.31.69.23",
+            "predicted_stage": "command_and_control",
+            "peak_attack_prob": 1.0,
+            "label_stage": "command_and_control",
+            "stage_match": true
+          },
+          {
+            "host": "172.31.69.13",
+            "predicted_stage": "lateral_movement",
+            "peak_attack_prob": 0.976,
+            "label_stage": "lateral_movement",
+            "stage_match": true
+          }
+        ],
+        "missed_attackers": [
+          {
+            "host": "103.99.0.227",
+            "stage": "lateral_movement",
+            "host_rows": 2,
+            "other_stages": []
+          },
+          {
+            "host": "13.58.98.64",
+            "stage": "initial_access",
+            "host_rows": 11,
+            "other_stages": []
+          },
+          {
+            "host": "172.31.69.12",
+            "stage": "lateral_movement",
+            "host_rows": 4,
+            "other_stages": []
+          },
+          {
+            "host": "172.31.69.16",
+            "stage": "lateral_movement",
+            "host_rows": 3,
+            "other_stages": []
+          },
+          {
+            "host": "172.31.69.5",
+            "stage": "lateral_movement",
+            "host_rows": 11,
+            "other_stages": []
+          },
+          {
+            "host": "172.31.69.9",
+            "stage": "lateral_movement",
+            "host_rows": 5,
+            "other_stages": []
+          },
+          {
+            "host": "178.93.125.210",
+            "stage": "lateral_movement",
+            "host_rows": 1,
+            "other_stages": []
+          },
+          {
+            "host": "190.204.224.130",
+            "stage": "lateral_movement",
+            "host_rows": 1,
+            "other_stages": []
+          },
+          {
+            "host": "208.100.26.228",
+            "stage": "lateral_movement",
+            "host_rows": 1,
+            "other_stages": []
+          },
+          {
+            "host": "66.45.81.53",
+            "stage": "lateral_movement",
+            "host_rows": 5,
+            "other_stages": []
+          },
+          {
+            "host": "77.72.82.57",
+            "stage": "lateral_movement",
+            "host_rows": 1,
+            "other_stages": []
+          },
+          {
+            "host": "77.72.82.92",
+            "stage": "lateral_movement",
+            "host_rows": 1,
+            "other_stages": []
+          }
+        ],
+        "stage_mismatches": [],
+        "host_precision": 1.0,
+        "host_recall": 0.4,
+        "predicted_stages": [
+          "command_and_control",
+          "lateral_movement"
+        ],
+        "stage_match": true
+      },
+      "overall_risk": 1.0,
+      "flag_basis": "future",
+      "network_risk_definition": "highest host attack probability in the window (max over hosts of 1 - P(benign)); this is not a calibrated probability and false alarms accumulate across hosts",
+      "windows": 48
+    }
+  }
+}
